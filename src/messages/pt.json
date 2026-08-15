@@ -1,13 +1,13 @@
 {
   "Nav": {
     "home": "Início",
-    "challenge": "O Desafio",
-    "engine": "SIGTER",
-    "pillars": "Pilares",
+    "challenge": "Abordagem",
+    "engine": "Soluções",
+    "pillars": "Foco",
     "portfolio": "Portfólio",
     "cv": "Currículo",
     "contact": "Contato",
-    "cta": "Agendar Diagnóstico"
+    "cta": "Falar no WhatsApp"
   },
   "Common": {
     "footer": {
@@ -15,67 +15,67 @@
     }
   },
   "Hero": {
-    "badge": "Arquitetura GIS, Cadastro Territorial & WebGIS",
-    "title": "Inteligência Territorial e Soberania Geoespacial para o Setor Público e Privado",
-    "description": "Desenho infraestruturas geográficas de ponta a ponta — do banco PostGIS ao WebGIS em produção. Cadastro técnico municipal, REURB, monitoramento territorial e aerofotogrametria com drones, sem dependência de licenças comerciais caras.",
-    "cta_primary": "Agendar Diagnóstico Gratuito"
+    "badge": "Geotecnologias, Geoinformação e Soluções Espaciais",
+    "title": "Transformamos dados geográficos em conhecimento, tecnologia e soluções aplicáveis a desafios reais",
+    "description": "Integramos Geociências, Ciências Geodésicas, geotecnologias, desenvolvimento de software e pesquisa aplicada — conectando ciência, inovação e mercado em soluções espaciais inteligentes.",
+    "cta_primary": "Conversar no WhatsApp"
   },
   "ValueProp": {
-    "title": "Domínio Completo da Esteira Geoespacial",
-    "description": "A união entre a leitura estrutural do território e a engenharia de software. Entrego desde o modelo de dados espacial até a interface analítica, com stack aberta e governança real do cadastro.",
+    "title": "Uma abordagem multidisciplinar",
+    "description": "Mais do que produzir mapas ou processar dados, compreendemos fenômenos territoriais e transformamos informações espaciais em ferramentas capazes de apoiar decisões, otimizar processos e criar novos produtos e serviços.",
     "items": {
       "databases": {
-        "title": "Bancos Espaciais Escaláveis",
-        "description": "Modelagem PostGIS de lotes, quadras, proprietários, zoneamento e processos administrativos, com auditoria e SRID Brasil (SIRGAS 2000)."
+        "title": "Ciência aplicada",
+        "description": "Investigamos métodos, tecnologias e aplicações com resultados concretos em meio ambiente, território, sustentabilidade, monitoramento espacial e gestão de recursos."
       },
       "integration": {
-        "title": "WebGIS Corporativo",
-        "description": "Aplicações React com Mapbox, Leaflet ou OpenLayers, acopladas a GeoServer, APIs REST e painéis de gestão em tempo real."
+        "title": "Perspectiva empresarial",
+        "description": "Identificamos problemas, desenvolvemos soluções tecnológicas e transformamos conhecimento científico em aplicações para empresas, organizações, instituições públicas e projetos de inovação."
       },
       "analytics": {
-        "title": "Campo, Drone e Análise",
-        "description": "Aerofotogrametria, GNSS, sensoriamento remoto e automações em Python/R que transformam o território em decisão."
+        "title": "Inteligência territorial",
+        "description": "Combinamos geoprocessamento, SIG, sensoriamento remoto, cartografia, geoinformação e desenvolvimento de aplicações geoespaciais sob medida."
       }
     }
   },
   "Challenge": {
-    "title": "A Armadilha das Licenças e dos Dados Fragmentados",
-    "subtitle": "Por que prefeituras e operações territoriais pagam caro e ainda não governam o território?",
-    "description": "Softwares proprietários travam o cadastro em licença por usuário. Planilhas, shapefiles soltos e WebGIS de prateleira não conversam com REURB, CTM ou licenciamento. O resultado é retrabalho, dados sem auditoria e dependência de fornecedor.",
-    "card_commercial_title": "O Cenário Atual (Licenças e Silos)",
-    "card_commercial_desc": "Custo crescente por assento, dados espalhados em arquivos, sem trilha de auditoria, sem LGPD e sem integração com o processo administrativo.",
-    "card_local_title": "A Solução (Soberania Territorial)",
-    "card_local_desc": "Infraestrutura própria: PostGIS + GeoServer + WebGIS. Custo previsível, dados soberanos, regras de negócio do município ou da operação — e controle total do cadastro."
+    "title": "Da pesquisa ao produto",
+    "subtitle": "A pesquisa pode gerar métodos. Os métodos podem gerar tecnologias. E as tecnologias podem se transformar em soluções.",
+    "description": "Essa é a lógica que orienta o projeto: aproximar pesquisa, desenvolvimento tecnológico e aplicação prática, criando soluções geoespaciais capazes de gerar valor científico, ambiental e econômico. Cada projeto pode partir de uma pergunta científica, uma necessidade empresarial, um problema ambiental ou um desafio territorial.",
+    "card_commercial_title": "Dados fragmentados",
+    "card_commercial_desc": "Arquivos soltos, mapas isolados e bases que não conversam entre si. A informação geográfica fica restrita a entregas pontuais, sem virar infraestrutura reutilizável.",
+    "card_local_title": "Infraestrutura espacial",
+    "card_local_desc": "Banco de dados espacial organiza. O GIS analisa. O SIG Web disponibiliza. O GeoPortal conecta usuários e projetos. As aplicações transformam tudo isso em ferramentas para as equipes."
   },
   "Engine": {
-    "badge": "Plataforma de Gestão Territorial",
-    "title": "SIGTER: o motor do seu cadastro",
-    "description": "O SIGTER não é um produto de prateleira — é a fundação arquitetural que implanto na sua operação. Gestores visualizam lotes, quadras, REURB e zoneamento em tempo real, com auditoria espacial e sem licença por assento.",
-    "screenshot_alt": "Painel analítico do SIGTER"
+    "badge": "Soluções GIS, GeoPortal e Inteligência Espacial",
+    "title": "Tecnologia espacial aplicada ao negócio",
+    "description": "Desenvolvemos soluções geoespaciais para empresas, consultorias e organizações que precisam transformar dados espaciais em informação, análise e tomada de decisão. Plataformas e aplicações para organizar, integrar, analisar e disponibilizar informações geográficas em ambientes digitais.",
+    "screenshot_alt": "Painel de GeoPortal e inteligência espacial"
   },
   "Pillars": {
-    "title": "Três Pilares de Impacto no Território",
-    "subtitle": "O foco está na governança cadastral, na soberania dos dados e no retorno operacional.",
-    "routing_title": "Cadastro e REURB",
-    "routing_desc": "CTM, cadastro imobiliário, REURB-S e REURB-E: geometria de núcleos e lotes, documentos, titulação e trilha de auditoria alinhada ao processo administrativo.",
-    "bi_title": "WebGIS e Governança",
-    "bi_desc": "Painéis que confrontam o território planejado com o executado. Consulta, edição, croqui e histórico de alterações — com LGPD e rastreabilidade.",
-    "topology_title": "Campo e Precisão",
-    "topology_desc": "Drones, GNSS e aerofotogrametria integrados ao banco espacial. Do levantamento em campo ao mapa oficial, sem perda de topologia nem de metadados."
+    "title": "Nosso foco",
+    "subtitle": "Entender o espaço. Transformar dados em informação. Transformar informação em tecnologia. E transformar tecnologia em solução.",
+    "routing_title": "GeoPortais e SIG Web",
+    "routing_desc": "GeoPortais corporativos e institucionais, aplicações geográficas interativas, dashboards e mapas para consulta, visualização e compartilhamento de informações territoriais.",
+    "bi_title": "Bancos e análise espacial",
+    "bi_desc": "Bancos de dados espaciais, geoprocessamento, integração de fontes geográficas e sistemas para gerenciamento, monitoramento territorial e ambiental.",
+    "topology_title": "Campo e sensoriamento",
+    "topology_desc": "Plataformas para coleta e visualização de dados de campo, imagens de satélite, aerofotogrametria e aplicações específicas para consultorias e projetos sob medida."
   },
   "CustomEngineering": {
-    "title": "Engenharia Geoespacial Sob Medida",
-    "subtitle": "Aplicações de alto impacto desenhadas e implantadas de ponta a ponta.",
-    "observation_title": "Observação e Diagnóstico Territorial",
-    "observation_desc": "APIs e WebGIS com Google Earth Engine, monitoramento ambiental e costeiro, vegetação, mineração e análises automatizadas de séries temporais.",
-    "logistics_title": "Gestão Pública e Cadastro Municipal",
-    "logistics_desc": "Bancos e aplicações para prefeituras e secretarias: cadastro técnico, zoneamento, áreas de interesse social e logística territorial.",
-    "infrastructure_title": "Infraestrutura GIS Corporativa",
-    "infrastructure_desc": "Tuning de GeoServer, modelagem PostGIS, Docker, workspaces em escala e plugins de performance para renderização rápida de mapas."
+    "title": "Soluções sob medida para consultorias e projetos",
+    "subtitle": "Cada empresa possui processos, dados e necessidades diferentes. Desenvolvemos de forma modular — de uma aplicação específica a uma plataforma geoespacial completa.",
+    "observation_title": "Consultorias ambientais e projetos costeiros",
+    "observation_desc": "Integramos uso e ocupação do solo, linha de costa, áreas protegidas, ecossistemas, infraestrutura, levantamentos de campo e imagens de satélite em GeoPortais e SIG Web para equipes, gestores e clientes.",
+    "logistics_title": "Operação da própria empresa",
+    "logistics_desc": "Coletar → armazenar → processar → analisar → visualizar → compartilhar → entregar. Reduza a fragmentação dos dados e crie uma estrutura tecnológica reutilizável em diferentes contratos e estudos.",
+    "infrastructure_title": "Stack integrada",
+    "infrastructure_desc": "Banco de Dados Espacial + GIS + SIG Web + GeoPortal + APIs + Aplicações + Dados de Campo + Sensoriamento Remoto — solução integrada para o problema real da empresa."
   },
   "Portfolio": {
-    "title": "Portfólio de Entregas",
-    "subtitle": "Projetos reais em WebGIS, banco espacial, aerofotogrametria e gestão territorial.",
+    "title": "Portfólio de entregas",
+    "subtitle": "Projetos reais em GeoPortal, SIG Web, banco espacial, aerofotogrametria e inteligência territorial.",
     "items": {
       "webgis_municipal": {
         "title": "WebGIS Municipal",
@@ -104,8 +104,8 @@
     }
   },
   "Contact": {
-    "title": "Pronto para governar o seu território?",
-    "description": "Solicite um diagnóstico técnico gratuito de 30 minutos. Avalio o cadastro, o WebGIS e a infraestrutura GIS atuais e apresento o caminho para uma operação soberana.",
+    "title": "Vamos transformar dados espaciais em solução?",
+    "description": "Dados espaciais não precisam ficar restritos a arquivos e mapas. Eles podem se transformar em sistemas, plataformas e soluções digitais. Fale comigo para um diagnóstico técnico gratuito de 30 minutos.",
     "cta_main": "Falar no WhatsApp",
     "cta_phone": "(81) 99667-4681",
     "cta_email": "Ou envie um e-mail para tfholanda@gmail.com"

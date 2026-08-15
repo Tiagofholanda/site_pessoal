@@ -27,9 +27,9 @@ export const dynamic = "force-static";
 export const dynamicParams = false;
 
 export const metadata = {
-  title: "Tiago Holanda Geospatial | Especialista em GIS e Gestão Territorial",
+  title: "Tiago Holanda Geospatial | Geotecnologias, Geoinformação e Soluções Espaciais",
   description:
-    "Consultoria e arquitetura GIS para cadastro técnico municipal, REURB, WebGIS, PostGIS, GeoServer e aerofotogrametria. Diagnóstico técnico gratuito.",
+    "Transformamos dados geográficos em conhecimento, tecnologia e soluções. GIS, GeoPortais, SIG Web, bancos espaciais, sensoriamento remoto e inteligência territorial.",
 };
 
 export default async function LocaleLayout({

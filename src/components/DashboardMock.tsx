@@ -6,13 +6,13 @@ export default function DashboardMock() {
         <span className="h-2.5 w-2.5 rounded-full bg-[#febc2e]" />
         <span className="h-2.5 w-2.5 rounded-full bg-[#28c840]" />
         <span className="ml-3 truncate text-xs text-muted">
-          sigter.thgis · painel territorial
+          geoportal.thgis · inteligência espacial
         </span>
       </div>
       <div className="grid grid-cols-[88px_1fr] sm:grid-cols-[112px_1fr]">
         <aside className="space-y-3 bg-navy p-3 text-[10px] text-white/70 sm:p-4">
           <div className="mb-4 h-2 w-12 rounded bg-teal" />
-          {["Cadastro", "REURB", "Lotes", "Zonas", "Auditoria"].map((item) => (
+          {["GeoPortal", "SIG Web", "Camadas", "Análise", "Campo"].map((item) => (
             <div
               key={item}
               className="rounded-md bg-white/10 px-2 py-1.5 text-[10px] font-medium"
@@ -50,10 +50,10 @@ export default function DashboardMock() {
           </svg>
           <div className="absolute bottom-3 left-3 right-3 flex gap-2">
             <div className="rounded-md bg-white/90 px-2 py-1 text-[10px] font-semibold text-navy shadow-sm">
-              12.480 lotes
+              dados espaciais
             </div>
             <div className="rounded-md bg-white/90 px-2 py-1 text-[10px] font-semibold text-teal shadow-sm">
-              REURB-S ativo
+              GeoPortal ativo
             </div>
           </div>
         </div>

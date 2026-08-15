@@ -74,7 +74,7 @@ export default async function Home({
 
       <section className="bg-bg-alt">
         <div className="mx-auto flex max-w-6xl flex-wrap items-center justify-center gap-x-10 gap-y-4 px-6 py-10 text-xs font-semibold uppercase tracking-wider text-muted">
-          {["PostGIS", "GeoServer", "QGIS", "React", "Python", "Docker", "GEE"].map(
+          {["PostGIS", "GeoServer", "QGIS", "React", "Python", "Docker", "GEE", "SIG Web", "GeoPortal"].map(
             (tech) => (
               <span key={tech} className="opacity-70 transition hover:text-navy hover:opacity-100">
                 {tech}
@@ -162,7 +162,7 @@ export default async function Home({
               {t("Engine.description")}
             </p>
             <div className="mb-6 flex flex-wrap gap-2">
-              {["PostGIS", "GeoServer", "React", "Python", "Docker"].map((badge) => (
+              {["PostGIS", "GeoServer", "SIG Web", "GeoPortal", "React", "Python"].map((badge) => (
                 <span
                   key={badge}
                   className="rounded-full border border-border bg-white px-3 py-1 text-xs font-medium text-navy"

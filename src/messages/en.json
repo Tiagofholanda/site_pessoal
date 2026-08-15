@@ -1,13 +1,13 @@
 {
   "Nav": {
     "home": "Home",
-    "challenge": "The Challenge",
-    "engine": "SIGTER",
-    "pillars": "Pillars",
+    "challenge": "Approach",
+    "engine": "Solutions",
+    "pillars": "Focus",
     "portfolio": "Portfolio",
     "cv": "CV",
     "contact": "Contact",
-    "cta": "Book a Diagnosis"
+    "cta": "Chat on WhatsApp"
   },
   "Common": {
     "footer": {
@@ -15,67 +15,67 @@
     }
   },
   "Hero": {
-    "badge": "GIS Architecture, Land Cadastre & WebGIS",
-    "title": "Territorial Intelligence and Geospatial Sovereignty for Public and Private Operations",
-    "description": "I design end-to-end geographic infrastructures — from PostGIS to production WebGIS. Municipal technical cadastre, land regularization, territorial monitoring and drone photogrammetry, without expensive commercial licenses.",
-    "cta_primary": "Book a Free Diagnosis"
+    "badge": "Geotechnologies, Geoinformation and Spatial Solutions",
+    "title": "We turn geographic data into knowledge, technology and solutions for real-world challenges",
+    "description": "We integrate Geosciences, Geodetic Sciences, geotechnologies, software development and applied research — connecting science, innovation and the market through intelligent spatial solutions.",
+    "cta_primary": "Chat on WhatsApp"
   },
   "ValueProp": {
-    "title": "Full Command of the Geospatial Pipeline",
-    "description": "The rare combination of territorial literacy and robust software engineering. I deliver from the spatial data model to the analytical interface, with an open stack and real cadastre governance.",
+    "title": "A multidisciplinary approach",
+    "description": "More than producing maps or processing data, we understand territorial phenomena and turn spatial information into tools that support decisions, optimize processes and create new products and services.",
     "items": {
       "databases": {
-        "title": "Scalable Spatial Databases",
-        "description": "PostGIS modeling of parcels, blocks, owners, zoning and administrative processes, with audit trails and Brazil SRID (SIRGAS 2000)."
+        "title": "Applied science",
+        "description": "We investigate methods, technologies and applications with concrete results in environment, territory, sustainability, spatial monitoring and resource management."
       },
       "integration": {
-        "title": "Enterprise WebGIS",
-        "description": "React apps with Mapbox, Leaflet or OpenLayers, wired to GeoServer, REST APIs and real-time management dashboards."
+        "title": "Business perspective",
+        "description": "We identify problems, develop technological solutions and turn scientific knowledge into applications for companies, organizations, public institutions and innovation projects."
       },
       "analytics": {
-        "title": "Field, Drone and Analysis",
-        "description": "Photogrammetry, GNSS, remote sensing and Python/R automation that turn territory into decisions."
+        "title": "Territorial intelligence",
+        "description": "We combine geoprocessing, GIS, remote sensing, cartography, geoinformation and custom geospatial application development."
       }
     }
   },
   "Challenge": {
-    "title": "The License and Fragmented-Data Trap",
-    "subtitle": "Why municipalities and territorial operations pay more and still fail to govern the land?",
-    "description": "Proprietary software locks the cadastre behind per-seat licenses. Spreadsheets, loose shapefiles and off-the-shelf WebGIS do not talk to land regularization or permitting. The result is rework, unaudited data and vendor lock-in.",
-    "card_commercial_title": "The Current Scenario (Licenses and Silos)",
-    "card_commercial_desc": "Rising per-seat cost, data scattered across files, no audit trail, weak privacy controls and no link to the administrative process.",
-    "card_local_title": "The Solution (Territorial Sovereignty)",
-    "card_local_desc": "Your own stack: PostGIS + GeoServer + WebGIS. Predictable cost, sovereign data, business rules of the municipality or operation — and full control of the cadastre."
+    "title": "From research to product",
+    "subtitle": "Research can generate methods. Methods can generate technologies. And technologies can become solutions.",
+    "description": "That is the logic behind the project: bringing research, technology development and practical application closer together, creating geospatial solutions with scientific, environmental and economic value. Each project may start from a scientific question, a business need, an environmental problem or a territorial challenge.",
+    "card_commercial_title": "Fragmented data",
+    "card_commercial_desc": "Loose files, isolated maps and databases that do not talk to each other. Geographic information stays locked in one-off deliverables instead of becoming reusable infrastructure.",
+    "card_local_title": "Spatial infrastructure",
+    "card_local_desc": "The spatial database organizes. GIS analyzes. Web GIS publishes. The GeoPortal connects users and projects. Applications turn all of that into tools for teams."
   },
   "Engine": {
-    "badge": "Territorial Management Platform",
-    "title": "SIGTER: the engine of your cadastre",
-    "description": "SIGTER is not a shelf product — it is the architectural foundation I deploy in your operation. Managers see parcels, blocks, land regularization and zoning in real time, with spatial audit and no per-seat license.",
-    "screenshot_alt": "SIGTER analytical dashboard"
+    "badge": "GIS, GeoPortal and Spatial Intelligence Solutions",
+    "title": "Spatial technology applied to business",
+    "description": "We develop geospatial solutions for companies, consultancies and organizations that need to turn spatial data into information, analysis and decision-making. Platforms and applications to organize, integrate, analyze and publish geographic information in digital environments.",
+    "screenshot_alt": "GeoPortal and spatial intelligence dashboard"
   },
   "Pillars": {
-    "title": "Three Pillars of Territorial Impact",
-    "subtitle": "The focus is cadastral governance, data sovereignty and operational return.",
-    "routing_title": "Cadastre and Land Regularization",
-    "routing_desc": "Municipal technical cadastre and social/specific land regularization: settlement and parcel geometry, documents, titling and an audit trail aligned with the administrative process.",
-    "bi_title": "WebGIS and Governance",
-    "bi_desc": "Dashboards that confront planned territory with what was executed. Query, edit, official sketches and change history — with privacy and traceability.",
-    "topology_title": "Field and Precision",
-    "topology_desc": "Drones, GNSS and photogrammetry integrated into the spatial database. From field survey to official map, without losing topology or metadata."
+    "title": "Our focus",
+    "subtitle": "Understand space. Turn data into information. Turn information into technology. And turn technology into a solution.",
+    "routing_title": "GeoPortals and Web GIS",
+    "routing_desc": "Corporate and institutional GeoPortals, interactive geographic applications, dashboards and maps for querying, visualizing and sharing territorial information.",
+    "bi_title": "Databases and spatial analysis",
+    "bi_desc": "Spatial databases, geoprocessing, integration of geographic sources and systems for management, territorial and environmental monitoring.",
+    "topology_title": "Field and remote sensing",
+    "topology_desc": "Platforms for field data collection and visualization, satellite imagery, photogrammetry and custom applications for consultancies and tailored projects."
   },
   "CustomEngineering": {
-    "title": "Custom Geospatial Engineering",
-    "subtitle": "High-impact applications designed and deployed end to end.",
-    "observation_title": "Observation and Territorial Diagnosis",
-    "observation_desc": "APIs and WebGIS with Google Earth Engine, environmental and coastal monitoring, vegetation, mining and automated time-series analysis.",
-    "logistics_title": "Public Management and Municipal Cadastre",
-    "logistics_desc": "Databases and applications for city halls and secretariats: technical cadastre, zoning, social-interest areas and territorial logistics.",
-    "infrastructure_title": "Corporate GIS Infrastructure",
-    "infrastructure_desc": "GeoServer tuning, PostGIS modeling, Docker, large-scale workspaces and performance plugins for fast map rendering."
+    "title": "Custom solutions for consultancies and projects",
+    "subtitle": "Every company has different processes, data and needs. We build modularly — from a project-specific app to a complete geospatial platform.",
+    "observation_title": "Environmental consultancies and coastal projects",
+    "observation_desc": "We integrate land use, shoreline, protected areas, ecosystems, infrastructure, field surveys and satellite imagery into GeoPortals and Web GIS for teams, managers and clients.",
+    "logistics_title": "Built into company operations",
+    "logistics_desc": "Collect → store → process → analyze → visualize → share → deliver. Reduce data fragmentation and create a reusable technology structure across contracts and studies.",
+    "infrastructure_title": "Integrated stack",
+    "infrastructure_desc": "Spatial Database + GIS + Web GIS + GeoPortal + APIs + Applications + Field Data + Remote Sensing — an integrated solution for the company's real problem."
   },
   "Portfolio": {
-    "title": "Delivery Portfolio",
-    "subtitle": "Real projects in WebGIS, spatial databases, photogrammetry and territorial management.",
+    "title": "Delivery portfolio",
+    "subtitle": "Real projects in GeoPortal, Web GIS, spatial databases, photogrammetry and territorial intelligence.",
     "items": {
       "webgis_municipal": {
         "title": "Municipal WebGIS",
@@ -104,8 +104,8 @@
     }
   },
   "Contact": {
-    "title": "Ready to govern your territory?",
-    "description": "Request a free 30-minute technical diagnosis. I review your cadastre, WebGIS and GIS infrastructure and outline the path to a sovereign operation.",
+    "title": "Shall we turn spatial data into a solution?",
+    "description": "Spatial data does not have to stay locked in files and maps. It can become systems, platforms and digital solutions. Message me for a free 30-minute technical diagnosis.",
     "cta_main": "Chat on WhatsApp",
     "cta_phone": "(81) 99667-4681",
     "cta_email": "Or email tfholanda@gmail.com"
