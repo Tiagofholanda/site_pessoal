@@ -123,7 +123,15 @@
       },
       "spatial_db": {
         "title": "Spatial database management",
-        "description": "Activity and city-block control, bulk import, auditing and inconsistency reporting."
+        "description": "Activity and city-block control, bulk import, spatial association and operational reports."
+      },
+      "inconsistencias": {
+        "title": "Spatial database quality",
+        "description": "Cadastral consistency dashboard: georeferencing, orthophotos, field photos and database sync."
+      },
+      "topo": {
+        "title": "Rural survey and land management",
+        "description": "Planialtimetric survey, terrain, contour lines and planting follow-up on a rural property."
       }
     }
   },
@@ -143,6 +151,9 @@
     "galleryIntro": "Area unlocked with the password. The screenshots below come from systems in operation and do not appear on the public part of the site.",
     "imageUnavailable": "Image unavailable in this session.",
     "viewImage": "View larger screenshot",
+    "imageCount": "{count} screenshots in this project",
+    "previous": "Previous",
+    "next": "Next",
     "confidential": "Restricted use",
     "close": "Close",
     "back": "Back to home"

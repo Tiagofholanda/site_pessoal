@@ -123,7 +123,15 @@
       },
       "spatial_db": {
         "title": "Gestão de banco espacial",
-        "description": "Controle de atividades e quadras, importação em lote, auditoria e relatório de inconsistências."
+        "description": "Controle de atividades e quadras, importação em lote, associação espacial e relatórios operacionais."
+      },
+      "inconsistencias": {
+        "title": "Qualidade de banco espacial",
+        "description": "Painel de consistência cadastral: georreferência, ortofotos, fotos de campo e sincronização entre bases."
+      },
+      "topo": {
+        "title": "Topografia e manejo rural",
+        "description": "Levantamento planialtimétrico, relevo, curvas de nível e acompanhamento de plantio em propriedade rural."
       }
     }
   },
@@ -143,6 +151,9 @@
     "galleryIntro": "Área liberada com a senha. As capturas abaixo são de sistemas em operação e não aparecem na parte pública do site.",
     "imageUnavailable": "Imagem indisponível nesta sessão.",
     "viewImage": "Ver captura em tamanho maior",
+    "imageCount": "{count} capturas neste projeto",
+    "previous": "Anterior",
+    "next": "Próxima",
     "confidential": "Uso restrito",
     "close": "Fechar",
     "back": "Voltar ao início"

@@ -24,26 +24,51 @@ export const privateProjects = [
   {
     key: "webgis_municipal",
     storagePath: "webgis-municipal.jpg",
-    localPath: "/restricted/webgis-municipal.jpg",
+    images: [
+      "/restricted/webgis-municipal.jpg",
+      "/restricted/webgis-municipal-2.jpg",
+      "/restricted/webgis-municipal-3.jpg",
+      "/restricted/webgis-municipal-4.jpg",
+    ],
   },
   {
     key: "webgis_devgis",
     storagePath: "webgis-devgis.jpg",
-    localPath: "/restricted/webgis-devgis.jpg",
+    images: [
+      "/restricted/webgis-devgis.jpg",
+      "/restricted/webgis-devgis-2.jpg",
+    ],
   },
   {
     key: "webgis_audit",
     storagePath: "webgis-audit.jpg",
-    localPath: "/restricted/webgis-audit.jpg",
+    images: ["/restricted/webgis-audit.jpg", "/restricted/webgis-audit-2.jpg"],
   },
   {
     key: "webgis_epi",
     storagePath: "webgis-epi.jpg",
-    localPath: "/restricted/webgis-epi.jpg",
+    images: ["/restricted/webgis-epi.jpg", "/restricted/webgis-epi-2.jpg"],
   },
   {
     key: "spatial_db",
     storagePath: "spatial-db.jpg",
-    localPath: "/restricted/spatial-db.jpg",
+    images: [
+      "/restricted/spatial-db.jpg",
+      "/restricted/spatial-db-2.jpg",
+      "/restricted/spatial-db-3.jpg",
+    ],
+  },
+  {
+    key: "inconsistencias",
+    storagePath: "inconsistencias.jpg",
+    images: [
+      "/restricted/inconsistencias.jpg",
+      "/restricted/inconsistencias-2.jpg",
+    ],
+  },
+  {
+    key: "topo",
+    storagePath: "topo.jpg",
+    images: ["/restricted/topo.jpg", "/restricted/topo-2.jpg"],
   },
 ] as const;
