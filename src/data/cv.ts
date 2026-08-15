@@ -172,13 +172,13 @@ export const experience = [
       role: "Especialista de Geoprocessamento",
       org: "AERO Engenharia",
       detail:
-        "Estruturação GIS, automação Python/R para cadastro e PAEBM, dashboards, IA para focos de dengue com drone e WebGIS em GeoServer/GeoNode na nuvem.",
+        "Atuação como especialista GIS: geração de layouts e produtos cartográficos em ArcGIS e QGIS, estruturação e interlocução de processos com Python, modelagem e gestão de bancos de dados espaciais e implantação de WebGIS. No eixo de saúde, desenvolvimento de IA para identificação de possíveis focos de dengue a partir de imagens de drone, dashboards e WebGIS (GeoServer/GeoNode) para monitoramento de animais e apoio à vigilância territorial.",
     },
     en: {
       role: "Geoprocessing Specialist",
       org: "AERO Engenharia",
       detail:
-        "GIS structuring, Python/R automation for cadastre and dam emergency plans, dashboards, AI for dengue breeding sites from drone imagery, and WebGIS on GeoServer/GeoNode.",
+        "GIS specialist work: map layout and cartographic products in ArcGIS and QGIS, process automation and integration with Python, spatial database modeling and management, and WebGIS deployment. In the health track, AI to identify possible dengue breeding sites from drone imagery, dashboards and WebGIS (GeoServer/GeoNode) for animal monitoring and territorial surveillance support.",
     },
   },
   {
