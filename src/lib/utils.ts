@@ -7,9 +7,20 @@ const WHATSAPP_MESSAGES = {
   en: "Hi Tiago! I hope you're well. I found your website and I'd like to talk about a GIS / territorial management technical diagnosis. Could we schedule a chat?",
 } as const;
 
+const ACCESS_MESSAGES = {
+  pt: "Olá, Tiago! Gostaria de solicitar acesso aos projetos privados do portfólio. Pode me enviar um login e uma senha?",
+  en: "Hi Tiago! I would like to request access to the private portfolio. Could you send me a login and password?",
+} as const;
+
 export function getWhatsAppUrl(locale: string = "pt"): string {
   const message =
     locale === "en" ? WHATSAPP_MESSAGES.en : WHATSAPP_MESSAGES.pt;
+  return `https://wa.me/${WHATSAPP_NUMBER}?text=${encodeURIComponent(message)}`;
+}
+
+export function getAccessRequestUrl(locale: string = "pt"): string {
+  const message =
+    locale === "en" ? ACCESS_MESSAGES.en : ACCESS_MESSAGES.pt;
   return `https://wa.me/${WHATSAPP_NUMBER}?text=${encodeURIComponent(message)}`;
 }
 

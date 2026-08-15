@@ -1,8 +1,8 @@
 import { getTranslations, setRequestLocale } from "next-intl/server";
 import { Link } from "@/i18n/routing";
-import { getAssetPath, getWhatsAppUrl } from "@/lib/utils";
+import { getAccessRequestUrl, getWhatsAppUrl } from "@/lib/utils";
 import { cvLinks } from "@/data/cv";
-import { portfolioItems } from "@/data/portfolio";
+import { privateProjects, publicProjects } from "@/data/portfolio";
 
 export const dynamic = "force-static";
 
@@ -143,23 +143,54 @@ export default async function Home({
               {t("Portfolio.subtitle")}
             </p>
           </div>
-          <div className="grid gap-x-8 gap-y-12 sm:grid-cols-2">
-            {portfolioItems.map((item) => (
+
+          <h3 className="mb-6 text-xl">{t("Portfolio.publicTitle")}</h3>
+          <div className="mb-14 grid gap-x-8 gap-y-10 sm:grid-cols-3">
+            {publicProjects.map((item) => (
               <article key={item.key}>
-                <img
-                  src={getAssetPath(item.image)}
-                  alt={t(`Portfolio.items.${item.key}.title`)}
-                  className="mb-4 aspect-[16/10] w-full border border-border object-cover object-top"
-                  loading="lazy"
-                />
-                <h3 className="mb-2 text-lg">
-                  {t(`Portfolio.items.${item.key}.title`)}
-                </h3>
+                <h4 className="mb-2 text-lg">
+                  {t(`Portfolio.public.${item.key}.title`)}
+                </h4>
                 <p className="text-sm leading-relaxed text-muted">
-                  {t(`Portfolio.items.${item.key}.description`)}
+                  {t(`Portfolio.public.${item.key}.description`)}
                 </p>
               </article>
             ))}
+          </div>
+
+          <div id="projetos-privados" className="border-t border-border pt-10">
+            <h3 className="mb-3 text-xl">{t("Portfolio.privateTitle")}</h3>
+            <p className="mb-8 max-w-2xl text-sm leading-relaxed text-muted">
+              {t("Portfolio.privateIntro")}
+            </p>
+            <ol className="mb-8 space-y-5">
+              {privateProjects.map((item) => (
+                <li key={item.key} className="border-l-2 border-border pl-4">
+                  <h4 className="mb-1 text-base">
+                    {t(`Portfolio.items.${item.key}.title`)}
+                  </h4>
+                  <p className="text-sm leading-relaxed text-muted">
+                    {t(`Portfolio.items.${item.key}.description`)}
+                  </p>
+                </li>
+              ))}
+            </ol>
+            <div className="flex flex-wrap items-center gap-x-6 gap-y-3">
+              <a
+                href={getAccessRequestUrl(locale)}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center bg-navy px-5 py-2.5 text-sm font-medium text-white transition hover:bg-teal"
+              >
+                {t("Portfolio.requestAccess")}
+              </a>
+              <Link
+                href="/login"
+                className="link-underline text-sm font-medium text-navy"
+              >
+                {t("Portfolio.hasAccess")}
+              </Link>
+            </div>
           </div>
         </div>
       </section>

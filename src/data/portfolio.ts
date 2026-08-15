@@ -1,26 +1,16 @@
-export const portfolioItems = [
-  {
-    key: "webgis_municipal",
-    image: "/portfolio/webgis-municipal.jpg",
-  },
-  {
-    key: "webgis_devgis",
-    image: "/portfolio/webgis-devgis.jpg",
-  },
-  {
-    key: "webgis_audit",
-    image: "/portfolio/webgis-audit.jpg",
-  },
-  {
-    key: "webgis_epi",
-    image: "/portfolio/webgis-epi.jpg",
-  },
-  {
-    key: "spatial_db",
-    image: "/portfolio/spatial-db.jpg",
-  },
-  {
-    key: "aero",
-    image: "/portfolio/aero.jpg",
-  },
+export const PRIVATE_BUCKET = "projetos-privados";
+
+export const publicProjects = [
+  { key: "coastal" },
+  { key: "research" },
+  { key: "teaching" },
+] as const;
+
+export const privateProjects = [
+  { key: "webgis_municipal", storagePath: "webgis-municipal.jpg" },
+  { key: "webgis_devgis", storagePath: "webgis-devgis.jpg" },
+  { key: "webgis_audit", storagePath: "webgis-audit.jpg" },
+  { key: "webgis_epi", storagePath: "webgis-epi.jpg" },
+  { key: "spatial_db", storagePath: "spatial-db.jpg" },
+  { key: "aero", storagePath: "aero.jpg" },
 ] as const;

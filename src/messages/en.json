@@ -4,6 +4,8 @@
     "services": "Services",
     "method": "Method",
     "portfolio": "Projects",
+    "private": "Restricted area",
+    "login": "Sign in",
     "cv": "CV",
     "contact": "Contact",
     "cta": "WhatsApp"
@@ -71,33 +73,68 @@
   },
   "Portfolio": {
     "title": "Projects",
-    "subtitle": "Screens from systems and products I built or maintained under public and private contracts.",
+    "subtitle": "Open research and teaching work. Systems built under contract stay in the restricted area.",
+    "publicTitle": "Public projects",
+    "privateTitle": "Private projects",
+    "privateIntro": "Screens from live systems include client data and are not published on the open web. If you need to see the material, request access — I will send a login and password.",
+    "requestAccess": "Request access",
+    "hasAccess": "I already have a login",
+    "public": {
+      "coastal": {
+        "title": "Coastal research",
+        "description": "Beach and dune morphodynamics with drones, GNSS and time series. MSc on Paiva Beach (UFPE) and a PhD in progress at UFF (LAGEF / H2O / LACCOST), including MADEPD and PELD-Tamandaré."
+      },
+      "research": {
+        "title": "Scientific output",
+        "description": "Papers in geomorphology, remote sensing and coastal management. Reviewer and editorial-board member of national and international journals listed on the CV."
+      },
+      "teaching": {
+        "title": "Teaching",
+        "description": "Professor in the Geoprocessing specialization at UFABC. Previously taught cartography, climatology and geotechnologies at UPE, plus UAV photogrammetry courses."
+      }
+    },
     "items": {
       "webgis_municipal": {
         "title": "Municipal WebGIS",
-        "description": "Geoportal with sub-decimetre orthomosaics, cadastral data and multilayer maps. On-screen vector editing, geolocated search, block export and executive reports."
+        "description": "Geoportal with orthomosaics, cadastral data and multilayer maps. Vector editing, geolocated search and executive reports."
       },
       "webgis_devgis": {
         "title": "Corporate geoportal",
-        "description": "Geospatial hub with corporate layers, collaborative editing, thematic classification and data publishing for municipalities and partner agencies."
+        "description": "Geospatial hub with corporate layers, collaborative editing and publishing for partner agencies."
       },
       "webgis_audit": {
         "title": "Aerial survey audit",
-        "description": "Environment to compare campaigns by period and region, overlay orthomosaics and DTMs, measure delivery compliance and record technical reviews."
+        "description": "Environment to compare campaigns, overlay orthomosaics and DTMs and record technical reviews."
       },
       "webgis_epi": {
         "title": "Epidemiological surveillance",
-        "description": "Municipal platform integrating traps, case records and weather through APIs, with heatmaps, threshold alerts and treatment prioritisation by district."
+        "description": "Municipal platform with traps, case records, heatmaps and threshold alerts."
       },
       "spatial_db": {
         "title": "Spatial database management",
-        "description": "Activity and city-block control with bulk import, audit logs, cross-database reconciliation and cartographic inconsistency reporting."
+        "description": "Activity and city-block control, bulk import, auditing and inconsistency reporting."
       },
       "aero": {
         "title": "Photogrammetry",
-        "description": "Drone flights with GNSS ground control processed in Metashape: orthomosaics, DTM/DSM, classified point clouds, auditable volumes and CAD/BIM integration."
+        "description": "Drone flights with GNSS processed in Metashape: orthomosaics, DTM/DSM, volumes and CAD/BIM integration."
       }
     }
+  },
+  "Auth": {
+    "title": "Restricted area",
+    "subtitle": "Sign in with the login and password I sent you. If you do not have access yet, request it on WhatsApp.",
+    "email": "Email",
+    "password": "Password",
+    "submit": "Sign in",
+    "loading": "Signing in…",
+    "wait": "Loading…",
+    "logout": "Sign out",
+    "error": "Invalid email or password.",
+    "missingConfig": "Authenticated access is still being set up. Please request the material directly on WhatsApp.",
+    "galleryTitle": "Private projects",
+    "galleryIntro": "The images below load only after sign-in, from private storage — they are not in the website repository.",
+    "imageUnavailable": "Image not yet uploaded to private storage.",
+    "back": "Back to home"
   },
   "Stack": {
     "title": "Tools",

@@ -13,6 +13,7 @@ export default function Footer() {
   const navLinks = [
     { href: "/#servicos", label: t("Nav.services") },
     { href: "/#projetos", label: t("Nav.portfolio") },
+    { href: "/login", label: t("Nav.private") },
     { href: "/#metodo", label: t("Nav.method") },
     { href: "/curriculo", label: t("Nav.cv") },
     { href: "/#contato", label: t("Nav.contact") },

@@ -16,6 +16,7 @@ export default function Navbar() {
   const navLinks = [
     { href: "/#servicos", label: t("services") },
     { href: "/#projetos", label: t("portfolio") },
+    { href: "/login", label: t("private") },
     { href: "/#metodo", label: t("method") },
     { href: "/curriculo", label: t("cv") },
     { href: "/#contato", label: t("contact") },

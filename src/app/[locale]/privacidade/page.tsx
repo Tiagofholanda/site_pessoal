@@ -25,8 +25,8 @@ export default async function PrivacyPage({
         </p>
         <p>
           {isPt
-            ? "Mensagens enviadas para tfholanda@gmail.com são usadas apenas para responder ao contato profissional. Não há cookies de rastreamento de terceiros."
-            : "Messages sent to tfholanda@gmail.com are used only to reply to professional contact. There are no third-party tracking cookies."}
+            ? "Mensagens enviadas para tfholanda@gmail.com são usadas apenas para responder ao contato profissional. O login da área restrita é autenticado pelo Supabase; a sessão fica no seu navegador e as imagens privadas só são carregadas depois da autenticação."
+            : "Messages sent to tfholanda@gmail.com are used only to reply to professional contact. Restricted-area login is authenticated by Supabase; the session stays in your browser and private images load only after sign-in."}
         </p>
       </div>
       <Link href="/" className="mt-8 inline-block text-sm font-semibold text-teal">

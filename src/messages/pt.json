@@ -4,6 +4,8 @@
     "services": "Serviços",
     "method": "Método",
     "portfolio": "Projetos",
+    "private": "Área restrita",
+    "login": "Entrar",
     "cv": "Currículo",
     "contact": "Contato",
     "cta": "WhatsApp"
@@ -71,33 +73,68 @@
   },
   "Portfolio": {
     "title": "Projetos",
-    "subtitle": "Capturas de sistemas e produtos que desenvolvi ou mantive em contratos públicos e privados.",
+    "subtitle": "Trabalho aberto de pesquisa e docência. Sistemas desenvolvidos sob contrato ficam na área restrita.",
+    "publicTitle": "Projetos públicos",
+    "privateTitle": "Projetos privados",
+    "privateIntro": "Capturas de sistemas em operação envolvem dados de clientes e não ficam abertas na internet. Se precisar ver o material, peça um acesso — eu envio login e senha.",
+    "requestAccess": "Pedir acesso",
+    "hasAccess": "Já tenho login",
+    "public": {
+      "coastal": {
+        "title": "Pesquisa costeira",
+        "description": "Morfodinâmica de praia e dunas com drone, GNSS e séries temporais. Dissertação na Praia do Paiva (UFPE) e tese em andamento na UFF (LAGEF / H2O / LACCOST), com participação em MADEPD e PELD-Tamandaré."
+      },
+      "research": {
+        "title": "Produção científica",
+        "description": "Artigos em geomorfologia, sensoriamento remoto e gestão costeira. Revisor e membro de corpo editorial de periódicos nacionais e internacionais listados no currículo."
+      },
+      "teaching": {
+        "title": "Docência",
+        "description": "Professor da especialização em Geoprocessamento na UFABC. Antes, disciplinas de cartografia, climatologia e geotecnologias na UPE, além de cursos de aerofotogrametria com VANT."
+      }
+    },
     "items": {
       "webgis_municipal": {
         "title": "WebGIS municipal",
-        "description": "Geoportal com ortomosaicos subdecimétricos, dados cadastrais e camadas multilayer. Editor vetorial em tela, buscas geolocalizadas, exportação de quadras e relatórios executivos."
+        "description": "Geoportal com ortomosaicos, dados cadastrais e camadas multilayer. Editor vetorial, buscas geolocalizadas e relatórios executivos."
       },
       "webgis_devgis": {
         "title": "Geoportal corporativo",
-        "description": "Hub geoespacial com camadas corporativas, edição colaborativa, classificação temática e publicação de dados para prefeituras e órgãos parceiros."
+        "description": "Hub geoespacial com camadas corporativas, edição colaborativa e publicação para órgãos parceiros."
       },
       "webgis_audit": {
         "title": "Auditoria de aerolevantamentos",
-        "description": "Ambiente para confrontar campanhas por período e região, sobrepor ortomosaicos e MDT, medir conformidade das entregas e registrar pareceres técnicos."
+        "description": "Ambiente para confrontar campanhas, sobrepor ortomosaicos e MDT e registrar pareceres técnicos."
       },
       "webgis_epi": {
         "title": "Vigilância epidemiológica",
-        "description": "Plataforma municipal que integra armadilhas, ocorrências e clima por API, com mapas de calor, alertas por limiar e priorização de tratamento por bairro."
+        "description": "Plataforma municipal com armadilhas, ocorrências, mapas de calor e alertas por limiar."
       },
       "spatial_db": {
         "title": "Gestão de banco espacial",
-        "description": "Controle de atividades e quadras com importação em lote, log de auditoria, conciliação entre bancos e relatório de inconsistências cartográficas."
+        "description": "Controle de atividades e quadras, importação em lote, auditoria e relatório de inconsistências."
       },
       "aero": {
         "title": "Aerofotogrametria",
-        "description": "Voos com drone e apoio GNSS processados em Metashape: ortomosaicos, MDT/MDS, nuvens classificadas, volumes auditáveis e integração com CAD e BIM."
+        "description": "Voos com drone e GNSS processados em Metashape: ortomosaicos, MDT/MDS, volumes e integração CAD/BIM."
       }
     }
+  },
+  "Auth": {
+    "title": "Área restrita",
+    "subtitle": "Entre com o login e a senha que eu enviei. Se ainda não tiver acesso, peça pelo WhatsApp.",
+    "email": "E-mail",
+    "password": "Senha",
+    "submit": "Entrar",
+    "loading": "Entrando…",
+    "wait": "Carregando…",
+    "logout": "Sair",
+    "error": "E-mail ou senha inválidos.",
+    "missingConfig": "O acesso autenticado ainda está sendo configurado. Peça o material diretamente pelo WhatsApp.",
+    "galleryTitle": "Projetos privados",
+    "galleryIntro": "As imagens abaixo só carregam depois do login e saem de um armazenamento privado — não ficam no repositório do site.",
+    "imageUnavailable": "Imagem ainda não enviada ao armazenamento privado.",
+    "back": "Voltar ao início"
   },
   "Stack": {
     "title": "Ferramentas",
