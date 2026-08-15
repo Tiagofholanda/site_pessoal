@@ -140,8 +140,11 @@
     "orRequest": "Ainda não tem senha?",
     "missingConfig": "O acesso autenticado ainda está sendo configurado. Peça o material diretamente pelo WhatsApp.",
     "galleryTitle": "Projetos privados",
-    "galleryIntro": "Área liberada com a senha. Capturas de sistemas de cliente só aparecem quando estão em armazenamento privado.",
-    "imageUnavailable": "Imagem ainda não enviada ao armazenamento privado.",
+    "galleryIntro": "Área liberada com a senha. As capturas abaixo são de sistemas em operação e não aparecem na parte pública do site.",
+    "imageUnavailable": "Imagem indisponível nesta sessão.",
+    "viewImage": "Ver captura em tamanho maior",
+    "confidential": "Uso restrito",
+    "close": "Fechar",
     "back": "Voltar ao início"
   },
   "Stack": {

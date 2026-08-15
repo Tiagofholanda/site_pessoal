@@ -225,6 +225,7 @@ export default async function Home({
                   key={item.key}
                   className="rounded-xl border border-border bg-bg-alt/80 p-5"
                 >
+                  <p className="eyebrow mb-2">{t("Auth.confidential")}</p>
                   <h4 className="mb-1 text-base">
                     {t(`Portfolio.items.${item.key}.title`)}
                   </h4>

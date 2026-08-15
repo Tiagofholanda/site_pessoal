@@ -140,8 +140,11 @@
     "orRequest": "Don't have a password yet?",
     "missingConfig": "Authenticated access is still being set up. Please request the material directly on WhatsApp.",
     "galleryTitle": "Private projects",
-    "galleryIntro": "Area unlocked with the password. Client-system screenshots appear only when they are in private storage.",
-    "imageUnavailable": "Image not yet uploaded to private storage.",
+    "galleryIntro": "Area unlocked with the password. The screenshots below come from systems in operation and do not appear on the public part of the site.",
+    "imageUnavailable": "Image unavailable in this session.",
+    "viewImage": "View larger screenshot",
+    "confidential": "Restricted use",
+    "close": "Close",
     "back": "Back to home"
   },
   "Stack": {
