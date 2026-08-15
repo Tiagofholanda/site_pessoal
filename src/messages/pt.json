@@ -16,8 +16,8 @@
   },
   "Hero": {
     "badge": "Geotecnologias, Geoinformação e Soluções Espaciais",
-    "title": "Transformamos dados geográficos em conhecimento, tecnologia e soluções aplicáveis a desafios reais",
-    "description": "Integramos Geociências, Ciências Geodésicas, geotecnologias, desenvolvimento de software e pesquisa aplicada — conectando ciência, inovação e mercado em soluções espaciais inteligentes.",
+    "title": "Dados geográficos viram conhecimento, tecnologia e solução.",
+    "description": "Integramos Geociências, geotecnologias, software e pesquisa aplicada — da ciência ao produto espacial.",
     "cta_primary": "Conversar no WhatsApp"
   },
   "ValueProp": {
@@ -75,31 +75,31 @@
   },
   "Portfolio": {
     "title": "Portfólio de entregas",
-    "subtitle": "Projetos reais em GeoPortal, SIG Web, banco espacial, aerofotogrametria e inteligência territorial.",
+    "subtitle": "Capturas reais de projetos em GeoPortal, SIG Web, banco espacial, aerofotogrametria e inteligência territorial.",
     "items": {
       "webgis_municipal": {
         "title": "WebGIS Municipal",
-        "description": "Geoportal corporativo para operação em larga escala, com camadas cadastrais e dashboards de gestão."
+        "description": "Geoportal com ortomosaicos, cadastro e camadas multilayer — operação territorial, editor vetorial, mapas de calor e relatórios executivos."
       },
       "webgis_devgis": {
         "title": "Geoportal Corporativo",
-        "description": "React + Mapbox GL JS, APIs REST, PostGIS e bibliotecas internas de mapeamento para alto volume de dados."
+        "description": "Hub geoespacial sob medida: camadas corporativas, edição em tempo real, filtros temáticos, mapas de calor e publicação para órgãos parceiros."
       },
       "webgis_audit": {
         "title": "Auditoria de Aerolevantamentos",
-        "description": "WebGIS para conferência de voos, cobertura e qualidade de produtos fotogramétricos."
+        "description": "WebGIS para confrontar campanhas, overlay de ortomosaicos/MDT, indicadores de qualidade e trilha de pareceres técnicos."
       },
       "webgis_epi": {
         "title": "Vigilância Epidemiológica",
-        "description": "Mapa operacional com IA para detecção de focos e apoio à decisão em saúde territorial."
+        "description": "Plataforma municipal com mapas de calor, armadilhas, alertas por limiar e apoio operacional ao combate a arboviroses."
       },
       "spatial_db": {
         "title": "Gestão de Banco Espacial",
-        "description": "Administração de atividades e quadras, consistência topológica e relatórios de inconsistências."
+        "description": "Gestão de atividades e quadras, auditoria de consistência, sincronização entre bases e painéis de qualidade do dado espacial."
       },
       "aero": {
         "title": "Aerofotogrametria de Alta Precisão",
-        "description": "Levantamentos com drone, GNSS e processamento em Metashape/Pix4D para produtos cartográficos oficiais."
+        "description": "Drone + GNSS (RTK/PPK) e Metashape: ortomosaicos, MDT/MDS, nuvens classificadas, volumes e integração com CAD/BIM."
       }
     }
   },

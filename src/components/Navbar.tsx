@@ -34,8 +34,8 @@ export default function Navbar() {
     <header
       className={`sticky top-0 z-50 transition-all ${
         scrolled
-          ? "bg-white/95 backdrop-blur border-b border-border shadow-[0_1px_0_var(--color-border)]"
-          : "bg-white/80 backdrop-blur"
+          ? "border-b border-border bg-white/95 shadow-[0_1px_0_var(--color-border)] backdrop-blur"
+          : "border-b border-transparent bg-white/90 backdrop-blur"
       }`}
     >
       <div className="mx-auto flex h-16 max-w-6xl items-center justify-between px-6">
@@ -73,7 +73,7 @@ export default function Navbar() {
             href={whatsappUrl}
             target="_blank"
             rel="noopener noreferrer"
-            className="rounded-md bg-teal px-5 py-2.5 text-sm font-semibold text-white transition hover:bg-teal-light"
+            className="btn-primary rounded-md bg-teal px-5 py-2.5 text-sm font-semibold text-white hover:bg-teal-light"
           >
             {t("cta")}
           </a>

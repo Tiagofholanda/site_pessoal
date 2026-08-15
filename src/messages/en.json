@@ -16,8 +16,8 @@
   },
   "Hero": {
     "badge": "Geotechnologies, Geoinformation and Spatial Solutions",
-    "title": "We turn geographic data into knowledge, technology and solutions for real-world challenges",
-    "description": "We integrate Geosciences, Geodetic Sciences, geotechnologies, software development and applied research — connecting science, innovation and the market through intelligent spatial solutions.",
+    "title": "Geographic data becomes knowledge, technology and solutions.",
+    "description": "We integrate Geosciences, geotechnologies, software and applied research — from science to spatial product.",
     "cta_primary": "Chat on WhatsApp"
   },
   "ValueProp": {
@@ -75,31 +75,31 @@
   },
   "Portfolio": {
     "title": "Delivery portfolio",
-    "subtitle": "Real projects in GeoPortal, Web GIS, spatial databases, photogrammetry and territorial intelligence.",
+    "subtitle": "Real project screenshots across GeoPortal, Web GIS, spatial databases, photogrammetry and territorial intelligence.",
     "items": {
       "webgis_municipal": {
         "title": "Municipal WebGIS",
-        "description": "Corporate geoportal for large-scale operations, with cadastral layers and management dashboards."
+        "description": "Geoportal with orthomosaics, cadastre and multilayer maps — vector editing, heatmaps and executive reporting."
       },
       "webgis_devgis": {
         "title": "Corporate Geoportal",
-        "description": "React + Mapbox GL JS, REST APIs, PostGIS and internal mapping libraries for high data volume."
+        "description": "Custom geospatial hub: corporate layers, live editing, thematic filters, heatmaps and publishing for partner agencies."
       },
       "webgis_audit": {
         "title": "Aerial Survey Audit",
-        "description": "WebGIS to review flights, coverage and photogrammetric product quality."
+        "description": "WebGIS to compare campaigns, overlay orthomosaics/DTMs, quality indicators and technical review trails."
       },
       "webgis_epi": {
         "title": "Epidemiological Surveillance",
-        "description": "Operational map with AI for outbreak detection and territorial health decision support."
+        "description": "Municipal platform with heatmaps, traps, threshold alerts and operational support against arboviruses."
       },
       "spatial_db": {
         "title": "Spatial Database Management",
-        "description": "Administration of activities and city blocks, topological consistency and inconsistency reports."
+        "description": "Activity and city-block management, consistency audits, cross-database sync and spatial data-quality panels."
       },
       "aero": {
         "title": "High-Precision Photogrammetry",
-        "description": "Drone and GNSS surveys processed in Metashape/Pix4D for official cartographic products."
+        "description": "Drone + GNSS (RTK/PPK) and Metashape: orthomosaics, DTM/DSM, classified clouds, volumes and CAD/BIM integration."
       }
     }
   },
