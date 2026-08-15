@@ -199,14 +199,16 @@ export const experience = [
   {
     period: "06/2024 — 12/2024",
     pt: {
-      role: "Especialista de Geoprocessamento / Coordenação de projetos",
+      role: "Especialista de Geoprocessamento",
       org: "NMC Integrativa",
-      detail: "Dados GIS, automação Python/R para cadastro e PAEBM, dashboards e planejamento interno.",
+      detail:
+        "Estruturação de dados GIS, automação com Python e R voltada a cadastro e PAEBM, produção cartográfica, dashboards e planejamento de tarefas internas.",
     },
     en: {
-      role: "Geoprocessing Specialist / Project coordination",
+      role: "Geoprocessing Specialist",
       org: "NMC Integrativa",
-      detail: "GIS data, Python/R automation for cadastre and dam emergency plans, dashboards and planning.",
+      detail:
+        "GIS data structuring, Python/R automation for cadastre and dam emergency plans, cartographic production, dashboards and internal task planning.",
     },
   },
   {
@@ -215,13 +217,13 @@ export const experience = [
       role: "Analista de Planejamento / Geoprocessamento",
       org: "RAC Soluções Ambientais (Fundação Renova — programas 07 e 08)",
       detail:
-        "GIS, automação, aerofotogrametria com drone, dashboards, sensoriamento remoto, fiscalização de campo e supervisão de contratos no reassentamento familiar.",
+        "Operação GIS no ecossistema ESRI (ArcGIS Desktop, ArcGIS Pro, ArcGIS Online e Apps): estruturação de dados, mapas temáticos, dashboards, conversão e integração de dados (CAD, KMZ, GPX, XLS), aerofotogrametria com drone, sensoriamento remoto, fiscalização de medição em campo e supervisão de contratos no reassentamento familiar.",
     },
     en: {
       role: "Planning / Geoprocessing Analyst",
       org: "RAC Soluções Ambientais (Fundação Renova — programs 07 and 08)",
       detail:
-        "GIS, automation, drone photogrammetry, dashboards, remote sensing, field control and contract supervision in family resettlement.",
+        "GIS operations in the ESRI stack (ArcGIS Desktop, ArcGIS Pro, ArcGIS Online and Apps): data structuring, thematic maps, dashboards, data conversion and integration (CAD, KMZ, GPX, XLS), drone photogrammetry, remote sensing, field measurement control and contract supervision in family resettlement.",
     },
   },
   {
