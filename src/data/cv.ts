@@ -25,6 +25,9 @@ export const cvCopy = {
     researchTitle: "Pesquisa, laboratórios e projetos",
     publicationsTitle: "Publicações selecionadas",
     teachingTitle: "Docência e cursos ministrados",
+    editorialTitle: "Atuação científica",
+    editorialBoardTitle: "Membro de corpo editorial",
+    reviewerTitle: "Revisor de periódico",
     skillsTitle: "Competências técnicas",
     linksTitle: "Perfis acadêmicos",
     present: "atual",
@@ -42,6 +45,9 @@ export const cvCopy = {
     researchTitle: "Research, labs and projects",
     publicationsTitle: "Selected publications",
     teachingTitle: "Teaching and courses delivered",
+    editorialTitle: "Scientific service",
+    editorialBoardTitle: "Editorial board member",
+    reviewerTitle: "Journal reviewer",
     skillsTitle: "Technical skills",
     linksTitle: "Academic profiles",
     present: "present",
@@ -395,9 +401,63 @@ export const teaching = [
     pt: "Cursos e palestras na UFPE: drone aplicado à climatologia; EPG/PET Geografia (2019); LACCOST, AMPLAGEO e LABOGEO (2020); aerofotogrametria com VANT (coordenador, 2017).",
     en: "Courses and talks at UFPE: drones in climatology; EPG/PET Geography (2019); LACCOST, AMPLAGEO and LABOGEO (2020); UAV photogrammetry (coordinator, 2017).",
   },
+];
+
+export const editorialBoard = [
   {
-    pt: "Revisor e corpo editorial: RVBMA, RBSR, Educação Ambiental, Meio Ambiente (Brasil), Journal of Coastal Research, Ocean & Coastal Management, Revista Brasileira de Geomorfologia.",
-    en: "Reviewer and editorial board: RVBMA, RBSR, Educação Ambiental, Meio Ambiente (Brasil), Journal of Coastal Research, Ocean & Coastal Management, Brazilian Journal of Geomorphology.",
+    period: "2020 —",
+    journal: "Meio Ambiente (Brasil)",
+  },
+  {
+    period: "2020 —",
+    journal: "Educação Ambiental (Brasil)",
+  },
+  {
+    period: "2020 —",
+    journal: "Revista Brasileira de Sensoriamento Remoto",
+  },
+  {
+    period: "2018 —",
+    journal: "Revista Brasileira de Meio Ambiente",
+  },
+  {
+    period: "",
+    journal: "Remote Sensing Applications: Society and Environment",
+  },
+];
+
+export const journalReviewer = [
+  {
+    period: "2023 —",
+    journal: "Revista Brasileira de Geomorfologia",
+  },
+  {
+    period: "2023 —",
+    journal: "Journal of Integrated Coastal Zone Management",
+  },
+  {
+    period: "2022 —",
+    journal: "Ocean & Coastal Management",
+  },
+  {
+    period: "2021 —",
+    journal: "Journal of Coastal Research",
+  },
+  {
+    period: "2020 —",
+    journal: "Revista Brasileira de Sensoriamento Remoto",
+  },
+  {
+    period: "2020 —",
+    journal: "Educação Ambiental (Brasil)",
+  },
+  {
+    period: "2020 —",
+    journal: "Meio Ambiente (Brasil)",
+  },
+  {
+    period: "2018 —",
+    journal: "Revista Brasileira de Meio Ambiente",
   },
 ];
 

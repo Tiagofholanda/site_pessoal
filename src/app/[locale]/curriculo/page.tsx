@@ -4,7 +4,9 @@ import {
   cvCopy,
   cvLinks,
   education,
+  editorialBoard,
   experience,
+  journalReviewer,
   publications,
   research,
   skills,
@@ -146,6 +148,40 @@ export default async function CurriculumPage({
               </li>
             ))}
           </ul>
+        </section>
+
+        <section className="mb-12">
+          <h2 className="mb-6 text-2xl">{copy.editorialTitle}</h2>
+          <div className="grid gap-6 md:grid-cols-2">
+            <div className="rounded-lg border border-border bg-white p-6">
+              <h3 className="mb-4 text-lg text-teal">{copy.editorialBoardTitle}</h3>
+              <ul className="space-y-3">
+                {editorialBoard.map((item) => (
+                  <li key={`ed-${item.journal}`} className="text-sm leading-relaxed">
+                    {item.period ? (
+                      <span className="mr-2 text-xs font-bold uppercase tracking-wide text-teal">
+                        {item.period} {copy.present}
+                      </span>
+                    ) : null}
+                    <span className="text-muted">{item.journal}</span>
+                  </li>
+                ))}
+              </ul>
+            </div>
+            <div className="rounded-lg border border-border bg-white p-6">
+              <h3 className="mb-4 text-lg text-teal">{copy.reviewerTitle}</h3>
+              <ul className="space-y-3">
+                {journalReviewer.map((item) => (
+                  <li key={`rev-${item.journal}-${item.period}`} className="text-sm leading-relaxed">
+                    <span className="mr-2 text-xs font-bold uppercase tracking-wide text-teal">
+                      {item.period} {copy.present}
+                    </span>
+                    <span className="text-muted">{item.journal}</span>
+                  </li>
+                ))}
+              </ul>
+            </div>
+          </div>
         </section>
 
         <section className="mb-12">
