@@ -10,10 +10,11 @@ import {
 } from "lucide-react";
 import { getTranslations, setRequestLocale } from "next-intl/server";
 import { Link } from "@/i18n/routing";
-import { getAccessRequestUrl, getAssetPath, getWhatsAppUrl } from "@/lib/utils";
+import { getAssetPath, getWhatsAppUrl } from "@/lib/utils";
 import { cvLinks } from "@/data/cv";
 import { privateProjects, publicProjects } from "@/data/portfolio";
 import MapDecor from "@/components/MapDecor";
+import LoginForm from "@/components/LoginForm";
 
 export const dynamic = "force-static";
 
@@ -231,22 +232,7 @@ export default async function Home({
                 </article>
               ))}
             </div>
-            <div className="flex flex-wrap items-center gap-3">
-              <a
-                href={getAccessRequestUrl(locale)}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="btn-primary inline-flex items-center px-5 py-2.5 text-sm"
-              >
-                {t("Portfolio.requestAccess")}
-              </a>
-              <Link
-                href="/login"
-                className="inline-flex items-center rounded-md border border-navy/15 bg-white px-5 py-2.5 text-sm font-semibold text-navy transition hover:border-navy/40"
-              >
-                {t("Portfolio.hasAccess")}
-              </Link>
-            </div>
+            <LoginForm compact />
           </div>
         </div>
       </section>

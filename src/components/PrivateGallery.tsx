@@ -1,11 +1,11 @@
 "use client";
 
 import { useEffect, useState } from "react";
-import { useLocale, useTranslations } from "next-intl";
+import { useTranslations } from "next-intl";
 import { Link, useRouter } from "@/i18n/routing";
+import { hasPrivateAccess, lockPrivateAccess } from "@/lib/access";
 import { createBrowserSupabase, isSupabaseConfigured } from "@/lib/supabase";
 import { PRIVATE_BUCKET, privateProjects } from "@/data/portfolio";
-import { getAccessRequestUrl } from "@/lib/utils";
 
 type SignedImage = {
   key: string;
@@ -14,7 +14,6 @@ type SignedImage = {
 
 export default function PrivateGallery() {
   const t = useTranslations();
-  const locale = useLocale();
   const router = useRouter();
   const [ready, setReady] = useState(false);
   const [images, setImages] = useState<SignedImage[]>([]);
@@ -23,40 +22,31 @@ export default function PrivateGallery() {
     let cancelled = false;
 
     async function load() {
-      if (!isSupabaseConfigured()) {
-        setReady(true);
-        return;
-      }
-
-      const supabase = createBrowserSupabase();
-      if (!supabase) {
-        setReady(true);
-        return;
-      }
-
-      const { data } = await supabase.auth.getSession();
-      if (!data.session) {
+      if (!hasPrivateAccess()) {
         router.replace("/login");
         return;
       }
 
-      const signed = await Promise.all(
-        privateProjects.map(async (item) => {
-          const { data: file, error } = await supabase.storage
-            .from(PRIVATE_BUCKET)
-            .createSignedUrl(item.storagePath, 60 * 60);
+      if (isSupabaseConfigured()) {
+        const supabase = createBrowserSupabase();
+        if (supabase) {
+          const signed = await Promise.all(
+            privateProjects.map(async (item) => {
+              const { data: file, error } = await supabase.storage
+                .from(PRIVATE_BUCKET)
+                .createSignedUrl(item.storagePath, 60 * 60);
 
-          return {
-            key: item.key,
-            url: error || !file?.signedUrl ? null : file.signedUrl,
-          };
-        })
-      );
-
-      if (!cancelled) {
-        setImages(signed);
-        setReady(true);
+              return {
+                key: item.key,
+                url: error || !file?.signedUrl ? null : file.signedUrl,
+              };
+            })
+          );
+          if (!cancelled) setImages(signed);
+        }
       }
+
+      if (!cancelled) setReady(true);
     }
 
     load();
@@ -65,32 +55,13 @@ export default function PrivateGallery() {
     };
   }, [router]);
 
-  async function logout() {
-    const supabase = createBrowserSupabase();
-    await supabase?.auth.signOut();
+  function logout() {
+    lockPrivateAccess();
     router.replace("/login");
   }
 
   if (!ready) {
     return <p className="text-sm text-muted">{t("Auth.wait")}</p>;
-  }
-
-  if (!isSupabaseConfigured()) {
-    return (
-      <div className="max-w-xl">
-        <p className="mb-6 text-sm leading-relaxed text-navy-mid">
-          {t("Auth.missingConfig")}
-        </p>
-        <a
-          href={getAccessRequestUrl(locale)}
-          target="_blank"
-          rel="noopener noreferrer"
-          className="inline-flex items-center bg-navy px-5 py-2.5 text-sm font-medium text-white transition hover:bg-teal"
-        >
-          WhatsApp
-        </a>
-      </div>
-    );
   }
 
   return (
@@ -108,23 +79,19 @@ export default function PrivateGallery() {
         </button>
       </div>
 
-      <div className="grid gap-x-8 gap-y-12 sm:grid-cols-2">
+      <div className="grid gap-6 sm:grid-cols-2">
         {privateProjects.map((item) => {
           const image = images.find((entry) => entry.key === item.key);
 
           return (
-            <article key={item.key}>
+            <article key={item.key} className="card p-5">
               {image?.url ? (
                 <img
                   src={image.url}
                   alt={t(`Portfolio.items.${item.key}.title`)}
-                  className="mb-4 aspect-[16/10] w-full border border-border object-cover object-top"
+                  className="mb-4 aspect-[16/10] w-full rounded-lg border border-border object-cover object-top"
                 />
-              ) : (
-                <div className="mb-4 flex aspect-[16/10] items-center border border-dashed border-border px-4 text-sm text-muted">
-                  {t("Auth.imageUnavailable")}
-                </div>
-              )}
+              ) : null}
               <h3 className="mb-2 text-lg">
                 {t(`Portfolio.items.${item.key}.title`)}
               </h3>

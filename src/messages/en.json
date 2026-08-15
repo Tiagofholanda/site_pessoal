@@ -75,9 +75,9 @@
     "subtitle": "Open research and teaching work. Systems built under contract stay in the restricted area.",
     "publicTitle": "Public projects",
     "privateTitle": "Private projects",
-    "privateIntro": "Screens from live systems include client data and are not published on the open web. If you need to see the material, request access — I will send a login and password.",
+    "privateIntro": "Screens from live systems include client data and are not published on the open web. If you already have the password, enter it below. If not, request access on WhatsApp.",
     "requestAccess": "Request access",
-    "hasAccess": "I already have a login",
+    "hasAccess": "I already have a password",
     "public": {
       "fitec": {
         "title": "FITec dashboard",
@@ -125,17 +125,18 @@
   },
   "Auth": {
     "title": "Restricted area",
-    "subtitle": "Sign in with the login and password I sent you. If you do not have access yet, request it on WhatsApp.",
+    "subtitle": "If you already received the password, enter it here. If not, request it on WhatsApp.",
     "email": "Email",
     "password": "Password",
     "submit": "Sign in",
     "loading": "Signing in…",
     "wait": "Loading…",
     "logout": "Sign out",
-    "error": "Invalid email or password.",
+    "error": "Invalid password.",
+    "orRequest": "Don't have a password yet?",
     "missingConfig": "Authenticated access is still being set up. Please request the material directly on WhatsApp.",
     "galleryTitle": "Private projects",
-    "galleryIntro": "The images below load only after sign-in, from private storage — they are not in the website repository.",
+    "galleryIntro": "Area unlocked with the password. Client-system screenshots appear only when they are in private storage.",
     "imageUnavailable": "Image not yet uploaded to private storage.",
     "back": "Back to home"
   },

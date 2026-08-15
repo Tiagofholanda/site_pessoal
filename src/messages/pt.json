@@ -75,9 +75,9 @@
     "subtitle": "Trabalho aberto de pesquisa e docência. Sistemas desenvolvidos sob contrato ficam na área restrita.",
     "publicTitle": "Projetos públicos",
     "privateTitle": "Projetos privados",
-    "privateIntro": "Capturas de sistemas em operação envolvem dados de clientes e não ficam abertas na internet. Se precisar ver o material, peça um acesso — eu envio login e senha.",
+    "privateIntro": "Capturas de sistemas em operação envolvem dados de clientes e não ficam abertas na internet. Se você já tem a senha, entre abaixo. Se não tiver, peça acesso pelo WhatsApp.",
     "requestAccess": "Pedir acesso",
-    "hasAccess": "Já tenho login",
+    "hasAccess": "Já tenho senha",
     "public": {
       "fitec": {
         "title": "Dashboard FITec",
@@ -125,17 +125,18 @@
   },
   "Auth": {
     "title": "Área restrita",
-    "subtitle": "Entre com o login e a senha que eu enviei. Se ainda não tiver acesso, peça pelo WhatsApp.",
+    "subtitle": "Se você já recebeu a senha, entre aqui. Se ainda não tiver, peça pelo WhatsApp.",
     "email": "E-mail",
     "password": "Senha",
     "submit": "Entrar",
     "loading": "Entrando…",
     "wait": "Carregando…",
     "logout": "Sair",
-    "error": "E-mail ou senha inválidos.",
+    "error": "Senha inválida.",
+    "orRequest": "Ainda não tem senha?",
     "missingConfig": "O acesso autenticado ainda está sendo configurado. Peça o material diretamente pelo WhatsApp.",
     "galleryTitle": "Projetos privados",
-    "galleryIntro": "As imagens abaixo só carregam depois do login e saem de um armazenamento privado — não ficam no repositório do site.",
+    "galleryIntro": "Área liberada com a senha. Capturas de sistemas de cliente só aparecem quando estão em armazenamento privado.",
     "imageUnavailable": "Imagem ainda não enviada ao armazenamento privado.",
     "back": "Voltar ao início"
   },
