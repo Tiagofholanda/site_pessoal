@@ -1,4 +1,4 @@
-import { Source_Serif_4, Inter } from "next/font/google";
+import { Sora, DM_Sans } from "next/font/google";
 import "../globals.css";
 import { routing } from "@/i18n/routing";
 import { notFound } from "next/navigation";
@@ -7,16 +7,15 @@ import { NextIntlClientProvider } from "next-intl";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 
-const serif = Source_Serif_4({
+const sora = Sora({
   subsets: ["latin"],
-  variable: "--font-serif",
-  weight: ["400", "600"],
-  style: ["normal", "italic"],
+  variable: "--font-sora",
+  weight: ["400", "600", "700"],
 });
 
-const sans = Inter({
+const dmSans = DM_Sans({
   subsets: ["latin"],
-  variable: "--font-sans",
+  variable: "--font-dm-sans",
   weight: ["400", "500", "600"],
 });
 
@@ -50,7 +49,7 @@ export default async function LocaleLayout({
   const messages = await getMessages();
 
   return (
-    <html lang={locale} className={`${serif.variable} ${sans.variable}`}>
+    <html lang={locale} className={`${sora.variable} ${dmSans.variable}`}>
       <body className="min-h-screen bg-background antialiased">
         <NextIntlClientProvider messages={messages}>
           <Navbar />

@@ -44,7 +44,7 @@ export default async function CurriculumPage({
               alt="Tiago Holanda"
               width={104}
               height={104}
-              className="h-26 w-26 shrink-0 border border-border object-cover grayscale-[35%]"
+              className="h-26 w-26 shrink-0 rounded-2xl border border-border object-cover shadow-sm"
             />
             <div>
               <h1 className="mb-2 text-4xl">Tiago Fernando de Holanda</h1>

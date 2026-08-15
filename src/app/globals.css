@@ -1,18 +1,18 @@
 @import "tailwindcss";
 
 :root {
-  --color-bg: #f4f3ef;
-  --color-bg-alt: #eae8e2;
+  --color-bg: #e8eef4;
+  --color-bg-alt: #f4f7fa;
   --color-surface: #ffffff;
-  --color-primary: #16212c;
-  --color-primary-mid: #3c4a58;
-  --color-accent: #145a48;
-  --color-accent-light: #1d7a61;
-  --color-text: #16212c;
-  --color-text-muted: #64707d;
-  --color-border: #d7d3ca;
-  --font-display: var(--font-serif);
-  --font-body: var(--font-sans);
+  --color-primary: #1a2e4a;
+  --color-primary-mid: #2e4d7a;
+  --color-accent: #2a8c6e;
+  --color-accent-light: #3db38a;
+  --color-text: #1a2e4a;
+  --color-text-muted: #5c6b80;
+  --color-border: #d5dde6;
+  --font-display: var(--font-sora);
+  --font-body: var(--font-dm-sans);
   --background: var(--color-bg);
   --foreground: var(--color-text);
 }
@@ -37,10 +37,12 @@ html {
 }
 
 body {
-  background: var(--color-bg);
+  background:
+    radial-gradient(ellipse 80% 50% at 100% 0%, rgba(42, 140, 110, 0.1), transparent 50%),
+    radial-gradient(ellipse 60% 40% at 0% 20%, rgba(26, 46, 74, 0.07), transparent 45%),
+    var(--color-bg);
   color: var(--color-text);
   font-family: var(--font-body), system-ui, sans-serif;
-  font-size: 16px;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
@@ -51,11 +53,10 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: var(--font-display), Georgia, serif;
-  font-weight: 600;
+  font-family: var(--font-display), sans-serif;
+  font-weight: 700;
   color: var(--color-primary);
-  letter-spacing: -0.01em;
-  line-height: 1.2;
+  letter-spacing: -0.02em;
 }
 
 .section-py {
@@ -72,24 +73,62 @@ h6 {
 
 .eyebrow {
   font-family: var(--font-body), system-ui, sans-serif;
-  font-size: 0.6875rem;
-  font-weight: 600;
-  letter-spacing: 0.14em;
+  font-size: 0.7rem;
+  font-weight: 700;
+  letter-spacing: 0.16em;
   text-transform: uppercase;
-  color: var(--color-text-muted);
-}
-
-.rule {
-  border-top: 1px solid var(--color-border);
+  color: var(--color-accent);
 }
 
 .link-underline {
   text-decoration: underline;
   text-underline-offset: 3px;
   text-decoration-thickness: 1px;
-  text-decoration-color: color-mix(in srgb, var(--color-accent) 45%, transparent);
+  text-decoration-color: color-mix(in srgb, var(--color-accent) 50%, transparent);
 }
 
 .link-underline:hover {
   text-decoration-color: var(--color-accent);
+}
+
+.card {
+  background: #fff;
+  border: 1px solid var(--color-border);
+  border-radius: 0.85rem;
+  box-shadow: 0 1px 3px rgba(26, 46, 74, 0.05);
+  transition:
+    transform 0.2s ease,
+    box-shadow 0.2s ease;
+}
+
+.card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 10px 28px rgba(26, 46, 74, 0.1);
+}
+
+.btn-primary {
+  border-radius: 0.5rem;
+  background: var(--color-accent);
+  color: #fff;
+  font-weight: 600;
+  box-shadow: 0 8px 18px rgba(42, 140, 110, 0.22);
+  transition:
+    background-color 0.2s ease,
+    transform 0.2s ease;
+}
+
+.btn-primary:hover {
+  background: var(--color-accent-light);
+  transform: translateY(-1px);
+}
+
+.icon-chip {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 2.75rem;
+  height: 2.75rem;
+  border-radius: 0.75rem;
+  background: rgba(42, 140, 110, 0.1);
+  border: 1px solid rgba(42, 140, 110, 0.18);
 }

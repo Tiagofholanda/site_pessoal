@@ -1,8 +1,18 @@
+import {
+  Database,
+  Globe2,
+  GraduationCap,
+  Layers,
+  Lock,
+  MapPinned,
+  Satellite,
+} from "lucide-react";
 import { getTranslations, setRequestLocale } from "next-intl/server";
 import { Link } from "@/i18n/routing";
 import { getAccessRequestUrl, getWhatsAppUrl } from "@/lib/utils";
 import { cvLinks } from "@/data/cv";
 import { privateProjects, publicProjects } from "@/data/portfolio";
+import MapDecor from "@/components/MapDecor";
 
 export const dynamic = "force-static";
 
@@ -13,7 +23,18 @@ const facts = [
   { value: "600+", key: "cities" },
 ] as const;
 
-const serviceKeys = ["webgis", "data", "field"] as const;
+const serviceKeys = [
+  { key: "webgis", icon: Layers },
+  { key: "data", icon: Database },
+  { key: "field", icon: Satellite },
+] as const;
+
+const publicIcons = {
+  coastal: MapPinned,
+  research: Globe2,
+  teaching: GraduationCap,
+} as const;
+
 const methodKeys = ["diagnosis", "structure", "application", "operation"] as const;
 
 const toolGroups = [
@@ -42,57 +63,55 @@ export default async function Home({
 
   return (
     <>
-      <section id="inicio" className="px-6 pb-16 pt-16 sm:pt-20">
-        <div className="mx-auto grid max-w-5xl gap-12 md:grid-cols-[1.35fr_0.65fr] md:items-start">
+      <section id="inicio" className="section-py relative overflow-hidden px-6">
+        <div className="mx-auto grid max-w-6xl items-center gap-12 lg:grid-cols-[1.05fr_0.95fr]">
           <div>
-            <h1 className="mb-3 text-[2.6rem] leading-[1.05] sm:text-6xl">
-              Tiago Holanda
-            </h1>
-            <p className="mb-7 font-[family-name:var(--font-display)] text-xl italic text-teal sm:text-2xl">
+            <div className="mb-6 flex items-center gap-4">
+              <img
+                src={cvLinks.avatar}
+                alt={t("Hero.portrait_alt")}
+                width={72}
+                height={72}
+                className="h-[72px] w-[72px] rounded-2xl border border-border object-cover shadow-sm"
+              />
+              <div>
+                <p className="eyebrow mb-1">Recife / Niterói</p>
+                <h1 className="text-4xl leading-none sm:text-5xl">Tiago Holanda</h1>
+              </div>
+            </div>
+            <p className="mb-5 text-xl font-semibold text-teal sm:text-2xl">
               {t("Hero.role")}
             </p>
-            <p className="mb-7 max-w-2xl text-[1.05rem] leading-[1.75] text-navy-mid">
+            <p className="mb-6 max-w-xl text-base leading-relaxed text-navy-mid sm:text-lg">
               {t("Hero.description")}
             </p>
-            <p className="mb-8 max-w-2xl border-l-2 border-border pl-4 text-sm leading-relaxed text-muted">
+            <p className="mb-8 max-w-xl text-sm leading-relaxed text-muted">
               {t("Hero.credentials")}
             </p>
-            <div className="flex flex-wrap items-center gap-x-6 gap-y-3">
+            <div className="flex flex-wrap gap-3">
               <a
                 href={getWhatsAppUrl(locale)}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="inline-flex items-center bg-navy px-6 py-3 text-sm font-medium text-white transition hover:bg-teal"
+                className="btn-primary inline-flex items-center px-6 py-3 text-sm"
               >
                 {t("Hero.cta_primary")}
               </a>
               <Link
                 href="/#projetos"
-                className="link-underline text-sm font-medium text-navy"
+                className="inline-flex items-center rounded-md border border-navy/15 bg-white px-6 py-3 text-sm font-semibold text-navy transition hover:border-navy/40"
               >
                 {t("Hero.cta_secondary")}
               </Link>
             </div>
           </div>
-
-          <figure className="order-first max-w-[220px] md:order-none md:max-w-none">
-            <img
-              src={cvLinks.avatar}
-              alt={t("Hero.portrait_alt")}
-              width={320}
-              height={320}
-              className="w-full border border-border object-cover grayscale-[35%]"
-            />
-            <figcaption className="mt-3 text-xs leading-relaxed text-muted">
-              Recife / Niterói — Brasil
-            </figcaption>
-          </figure>
+          <MapDecor />
         </div>
       </section>
 
-      <section className="px-6">
-        <div className="mx-auto max-w-5xl border-y border-border py-8">
-          <dl className="grid grid-cols-2 gap-x-6 gap-y-8 sm:grid-cols-4">
+      <section className="border-y border-border/70 bg-white/70">
+        <div className="mx-auto max-w-6xl px-6 py-8">
+          <dl className="grid grid-cols-2 gap-6 sm:grid-cols-4">
             {facts.map((fact) => (
               <div key={fact.key}>
                 <dt className="font-[family-name:var(--font-display)] text-3xl text-navy">
@@ -108,24 +127,20 @@ export default async function Home({
       </section>
 
       <section id="servicos" className="section-py px-6">
-        <div className="mx-auto grid max-w-5xl gap-10 md:grid-cols-[0.4fr_0.6fr]">
-          <div>
+        <div className="mx-auto max-w-6xl">
+          <div className="mx-auto mb-12 max-w-2xl text-center">
             <p className="eyebrow mb-3">01</p>
-            <h2 className="mb-4 text-3xl">{t("Services.title")}</h2>
-            <p className="text-sm leading-relaxed text-muted">
-              {t("Services.intro")}
-            </p>
+            <h2 className="mb-4 text-3xl sm:text-4xl">{t("Services.title")}</h2>
+            <p className="leading-relaxed text-muted">{t("Services.intro")}</p>
           </div>
-          <div>
-            {serviceKeys.map((key, index) => (
-              <article
-                key={key}
-                className={`py-7 ${index > 0 ? "border-t border-border" : "pt-0"}`}
-              >
-                <h3 className="mb-2 text-xl">
-                  {t(`Services.items.${key}.title`)}
-                </h3>
-                <p className="text-sm leading-relaxed text-navy-mid">
+          <div className="grid gap-6 md:grid-cols-3">
+            {serviceKeys.map(({ key, icon: Icon }) => (
+              <article key={key} className="card p-8">
+                <div className="icon-chip mb-4">
+                  <Icon className="text-teal" size={20} />
+                </div>
+                <h3 className="mb-2 text-xl">{t(`Services.items.${key}.title`)}</h3>
+                <p className="text-sm leading-relaxed text-muted">
                   {t(`Services.items.${key}.description`)}
                 </p>
               </article>
@@ -134,59 +149,73 @@ export default async function Home({
         </div>
       </section>
 
-      <section id="projetos" className="section-py border-t border-border bg-bg-alt px-6">
-        <div className="mx-auto max-w-5xl">
-          <div className="mb-10 max-w-2xl">
+      <section id="projetos" className="section-py bg-bg-alt px-6">
+        <div className="mx-auto max-w-6xl">
+          <div className="mx-auto mb-12 max-w-2xl text-center">
             <p className="eyebrow mb-3">02</p>
-            <h2 className="mb-3 text-3xl">{t("Portfolio.title")}</h2>
-            <p className="text-sm leading-relaxed text-muted">
-              {t("Portfolio.subtitle")}
-            </p>
+            <h2 className="mb-3 text-3xl sm:text-4xl">{t("Portfolio.title")}</h2>
+            <p className="leading-relaxed text-muted">{t("Portfolio.subtitle")}</p>
           </div>
 
           <h3 className="mb-6 text-xl">{t("Portfolio.publicTitle")}</h3>
-          <div className="mb-14 grid gap-x-8 gap-y-10 sm:grid-cols-3">
-            {publicProjects.map((item) => (
-              <article key={item.key}>
-                <h4 className="mb-2 text-lg">
-                  {t(`Portfolio.public.${item.key}.title`)}
-                </h4>
-                <p className="text-sm leading-relaxed text-muted">
-                  {t(`Portfolio.public.${item.key}.description`)}
-                </p>
-              </article>
-            ))}
+          <div className="mb-12 grid gap-6 md:grid-cols-3">
+            {publicProjects.map((item) => {
+              const Icon = publicIcons[item.key];
+              return (
+                <article key={item.key} className="card p-7">
+                  <div className="icon-chip mb-4">
+                    <Icon className="text-teal" size={20} />
+                  </div>
+                  <h4 className="mb-2 text-lg">
+                    {t(`Portfolio.public.${item.key}.title`)}
+                  </h4>
+                  <p className="text-sm leading-relaxed text-muted">
+                    {t(`Portfolio.public.${item.key}.description`)}
+                  </p>
+                </article>
+              );
+            })}
           </div>
 
-          <div id="projetos-privados" className="border-t border-border pt-10">
-            <h3 className="mb-3 text-xl">{t("Portfolio.privateTitle")}</h3>
-            <p className="mb-8 max-w-2xl text-sm leading-relaxed text-muted">
-              {t("Portfolio.privateIntro")}
-            </p>
-            <ol className="mb-8 space-y-5">
+          <div id="projetos-privados" className="card p-8 md:p-10">
+            <div className="mb-6 flex items-start gap-3">
+              <div className="icon-chip">
+                <Lock className="text-teal" size={18} />
+              </div>
+              <div>
+                <h3 className="mb-2 text-xl">{t("Portfolio.privateTitle")}</h3>
+                <p className="max-w-2xl text-sm leading-relaxed text-muted">
+                  {t("Portfolio.privateIntro")}
+                </p>
+              </div>
+            </div>
+            <div className="mb-8 grid gap-4 sm:grid-cols-2">
               {privateProjects.map((item) => (
-                <li key={item.key} className="border-l-2 border-border pl-4">
+                <article
+                  key={item.key}
+                  className="rounded-xl border border-border bg-bg-alt/80 p-5"
+                >
                   <h4 className="mb-1 text-base">
                     {t(`Portfolio.items.${item.key}.title`)}
                   </h4>
                   <p className="text-sm leading-relaxed text-muted">
                     {t(`Portfolio.items.${item.key}.description`)}
                   </p>
-                </li>
+                </article>
               ))}
-            </ol>
-            <div className="flex flex-wrap items-center gap-x-6 gap-y-3">
+            </div>
+            <div className="flex flex-wrap items-center gap-3">
               <a
                 href={getAccessRequestUrl(locale)}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="inline-flex items-center bg-navy px-5 py-2.5 text-sm font-medium text-white transition hover:bg-teal"
+                className="btn-primary inline-flex items-center px-5 py-2.5 text-sm"
               >
                 {t("Portfolio.requestAccess")}
               </a>
               <Link
                 href="/login"
-                className="link-underline text-sm font-medium text-navy"
+                className="inline-flex items-center rounded-md border border-navy/15 bg-white px-5 py-2.5 text-sm font-semibold text-navy transition hover:border-navy/40"
               >
                 {t("Portfolio.hasAccess")}
               </Link>
@@ -196,22 +225,20 @@ export default async function Home({
       </section>
 
       <section id="metodo" className="section-py px-6">
-        <div className="mx-auto max-w-5xl">
-          <div className="mb-10 max-w-2xl">
+        <div className="mx-auto max-w-6xl">
+          <div className="mx-auto mb-12 max-w-2xl text-center">
             <p className="eyebrow mb-3">03</p>
-            <h2 className="mb-3 text-3xl">{t("Method.title")}</h2>
-            <p className="text-sm leading-relaxed text-muted">{t("Method.intro")}</p>
+            <h2 className="mb-3 text-3xl sm:text-4xl">{t("Method.title")}</h2>
+            <p className="leading-relaxed text-muted">{t("Method.intro")}</p>
           </div>
-          <ol className="grid gap-px border border-border bg-border sm:grid-cols-2">
+          <ol className="grid gap-6 sm:grid-cols-2">
             {methodKeys.map((key, index) => (
-              <li key={key} className="bg-background p-7">
-                <p className="eyebrow mb-3 text-teal">
+              <li key={key} className="card p-7">
+                <p className="eyebrow mb-3">
                   {String(index + 1).padStart(2, "0")}
                 </p>
-                <h3 className="mb-2 text-lg">
-                  {t(`Method.steps.${key}.title`)}
-                </h3>
-                <p className="text-sm leading-relaxed text-navy-mid">
+                <h3 className="mb-2 text-lg">{t(`Method.steps.${key}.title`)}</h3>
+                <p className="text-sm leading-relaxed text-muted">
                   {t(`Method.steps.${key}.description`)}
                 </p>
               </li>
@@ -220,8 +247,8 @@ export default async function Home({
         </div>
       </section>
 
-      <section className="px-6 pb-16">
-        <div className="mx-auto max-w-5xl border-t border-border pt-10">
+      <section className="border-y border-border/70 bg-white/70 px-6 py-12">
+        <div className="mx-auto max-w-6xl">
           <div className="mb-8 max-w-2xl">
             <h2 className="mb-2 text-2xl">{t("Stack.title")}</h2>
             <p className="text-sm text-muted">{t("Stack.note")}</p>
@@ -239,11 +266,15 @@ export default async function Home({
         </div>
       </section>
 
-      <section id="contato" className="bg-navy px-6 py-20">
-        <div className="mx-auto grid max-w-5xl gap-10 md:grid-cols-[0.55fr_0.45fr] md:items-end">
+      <section id="contato" className="relative overflow-hidden px-6 py-20">
+        <div className="absolute inset-0 bg-gradient-to-br from-navy via-[#173252] to-[#12382e]" />
+        <div className="pointer-events-none absolute -right-16 top-0 h-64 w-64 rounded-full bg-teal/20 blur-3xl" />
+        <div className="relative mx-auto grid max-w-6xl gap-10 md:grid-cols-[0.6fr_0.4fr] md:items-end">
           <div>
-            <h2 className="mb-4 text-3xl text-white">{t("Contact.title")}</h2>
-            <p className="max-w-xl text-sm leading-relaxed text-white/70">
+            <h2 className="mb-4 text-3xl text-white sm:text-4xl">
+              {t("Contact.title")}
+            </h2>
+            <p className="max-w-xl leading-relaxed text-white/75">
               {t("Contact.description")}
             </p>
           </div>
@@ -252,7 +283,7 @@ export default async function Home({
               href={getWhatsAppUrl(locale)}
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-flex items-center bg-white px-6 py-3 text-sm font-medium text-navy transition hover:bg-teal hover:text-white"
+              className="btn-primary inline-flex items-center px-6 py-3 text-sm"
             >
               {t("Contact.cta_main")}
             </a>

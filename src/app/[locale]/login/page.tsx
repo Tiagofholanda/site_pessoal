@@ -16,26 +16,28 @@ export default async function LoginPage({
 
   return (
     <article className="section-py mx-auto max-w-3xl px-6">
-      <p className="eyebrow mb-3">Acesso</p>
-      <h1 className="mb-4 text-4xl">{t("Auth.title")}</h1>
-      <p className="mb-8 max-w-xl text-sm leading-relaxed text-muted">
-        {t("Auth.subtitle")}
-      </p>
-      <LoginForm />
-      <p className="mt-8 text-sm text-muted">
-        <a
-          href={getAccessRequestUrl(locale)}
-          target="_blank"
-          rel="noopener noreferrer"
-          className="link-underline"
-        >
-          {t("Portfolio.requestAccess")}
-        </a>
-        <span className="mx-3">·</span>
-        <Link href="/" className="link-underline">
-          {t("Auth.back")}
-        </Link>
-      </p>
+      <div className="card p-8 sm:p-10">
+        <p className="eyebrow mb-3">Acesso</p>
+        <h1 className="mb-4 text-4xl">{t("Auth.title")}</h1>
+        <p className="mb-8 max-w-xl text-sm leading-relaxed text-muted">
+          {t("Auth.subtitle")}
+        </p>
+        <LoginForm />
+        <p className="mt-8 text-sm text-muted">
+          <a
+            href={getAccessRequestUrl(locale)}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="link-underline"
+          >
+            {t("Portfolio.requestAccess")}
+          </a>
+          <span className="mx-3">·</span>
+          <Link href="/" className="link-underline">
+            {t("Auth.back")}
+          </Link>
+        </p>
+      </div>
     </article>
   );
 }

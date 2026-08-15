@@ -25,7 +25,7 @@ export default function LoginForm() {
           href={getAccessRequestUrl(locale)}
           target="_blank"
           rel="noopener noreferrer"
-          className="inline-flex items-center bg-navy px-5 py-2.5 text-sm font-medium text-white transition hover:bg-teal"
+          className="btn-primary inline-flex items-center px-5 py-2.5 text-sm"
         >
           WhatsApp
         </a>
@@ -71,7 +71,7 @@ export default function LoginForm() {
           required
           value={email}
           onChange={(event) => setEmail(event.target.value)}
-          className="w-full border border-border bg-white px-3 py-2.5 text-sm text-navy outline-none focus:border-teal"
+          className="w-full rounded-md border border-border bg-white px-3 py-2.5 text-sm text-navy outline-none focus:border-teal"
         />
       </label>
       <label className="block">
@@ -83,14 +83,14 @@ export default function LoginForm() {
           required
           value={password}
           onChange={(event) => setPassword(event.target.value)}
-          className="w-full border border-border bg-white px-3 py-2.5 text-sm text-navy outline-none focus:border-teal"
+          className="w-full rounded-md border border-border bg-white px-3 py-2.5 text-sm text-navy outline-none focus:border-teal"
         />
       </label>
       {error ? <p className="text-sm text-red-700">{error}</p> : null}
       <button
         type="submit"
         disabled={loading}
-        className="bg-navy px-5 py-2.5 text-sm font-medium text-white transition hover:bg-teal disabled:opacity-60"
+        className="btn-primary px-5 py-2.5 text-sm disabled:opacity-60"
       >
         {loading ? t("loading") : t("submit")}
       </button>
