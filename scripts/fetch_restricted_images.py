@@ -12,7 +12,6 @@ sources = {
     "webgis-audit.jpg": f"{base}/webgis_2/Captura%20de%20tela%202025-11-29%20123215.png",
     "webgis-epi.jpg": f"{base}/webgis_3/Captura%20de%20tela%202025-11-29%20083316.png",
     "spatial-db.jpg": f"{base}/gerenciamento%20de%20banco%20de%20dados%20espacial/banco1.png",
-    "aero.jpg": f"{base}/agisoft/agisoft1.png",
 }
 
 for name, url in sources.items():

@@ -87,6 +87,10 @@
         "title": "Dashboard FITec",
         "description": "Painel Streamlit para acompanhar pontos de campo, progresso de meta, extensão da rede e mapa do levantamento. Código aberto no GitHub."
       },
+      "aero": {
+        "title": "Aerofotogrametria",
+        "description": "Voos com drone e GNSS processados em Metashape: ortomosaicos, MDT/MDS, volumes e integração CAD/BIM."
+      },
       "coastal": {
         "title": "Pesquisa costeira",
         "description": "Morfodinâmica de praia e dunas com drone, GNSS e séries temporais. Dissertação na Praia do Paiva (UFPE) e tese em andamento na UFF (LAGEF / H2O / LACCOST), com participação em MADEPD e PELD-Tamandaré."
@@ -120,10 +124,6 @@
       "spatial_db": {
         "title": "Gestão de banco espacial",
         "description": "Controle de atividades e quadras, importação em lote, auditoria e relatório de inconsistências."
-      },
-      "aero": {
-        "title": "Aerofotogrametria",
-        "description": "Voos com drone e GNSS processados em Metashape: ortomosaicos, MDT/MDS, volumes e integração CAD/BIM."
       }
     }
   },

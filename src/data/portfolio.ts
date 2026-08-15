@@ -11,6 +11,10 @@ export const publicProjects = [
     image: "/portfolio/fitec.jpg",
     href: "https://github.com/Tiagofholanda/Dashboard_FITec",
   },
+  {
+    key: "aero",
+    image: "/portfolio/aero.jpg",
+  },
   { key: "coastal" },
   { key: "research" },
   { key: "teaching" },
@@ -41,10 +45,5 @@ export const privateProjects = [
     key: "spatial_db",
     storagePath: "spatial-db.jpg",
     localPath: "/restricted/spatial-db.jpg",
-  },
-  {
-    key: "aero",
-    storagePath: "aero.jpg",
-    localPath: "/restricted/aero.jpg",
   },
 ] as const;

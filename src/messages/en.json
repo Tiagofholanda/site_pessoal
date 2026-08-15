@@ -87,6 +87,10 @@
         "title": "FITec dashboard",
         "description": "Streamlit dashboard to track field points, goal progress, network length and the survey map. Open source on GitHub."
       },
+      "aero": {
+        "title": "Photogrammetry",
+        "description": "Drone flights with GNSS processed in Metashape: orthomosaics, DTM/DSM, volumes and CAD/BIM integration."
+      },
       "coastal": {
         "title": "Coastal research",
         "description": "Beach and dune morphodynamics with drones, GNSS and time series. MSc on Paiva Beach (UFPE) and a PhD in progress at UFF (LAGEF / H2O / LACCOST), including MADEPD and PELD-Tamandaré."
@@ -120,10 +124,6 @@
       "spatial_db": {
         "title": "Spatial database management",
         "description": "Activity and city-block control, bulk import, auditing and inconsistency reporting."
-      },
-      "aero": {
-        "title": "Photogrammetry",
-        "description": "Drone flights with GNSS processed in Metashape: orthomosaics, DTM/DSM, volumes and CAD/BIM integration."
       }
     }
   },

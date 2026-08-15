@@ -34,6 +34,7 @@ const serviceKeys = [
 const publicIcons = {
   sinigc: Waves,
   fitec: BarChart3,
+  aero: Satellite,
   coastal: MapPinned,
   research: Globe2,
   teaching: GraduationCap,
