@@ -132,6 +132,14 @@
       "topo": {
         "title": "Topografia e manejo rural",
         "description": "Levantamento planialtimétrico, relevo, curvas de nível e acompanhamento de plantio em propriedade rural."
+      },
+      "metashape": {
+        "title": "Processamento fotogramétrico",
+        "description": "Fluxo no Metashape: alinhamento, nuvem densa, MDT/MDS, ortomosaico e produtos 3D além da captura pública."
+      },
+      "artigos": {
+        "title": "Figuras de artigos",
+        "description": "Figuras de pesquisa costeira usadas em artigos: morfodinâmica, séries temporais e produtos de drone e GNSS."
       }
     }
   },

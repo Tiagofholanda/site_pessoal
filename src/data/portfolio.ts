@@ -71,4 +71,24 @@ export const privateProjects = [
     storagePath: "topo.jpg",
     images: ["/restricted/topo.jpg", "/restricted/topo-2.jpg"],
   },
+  {
+    key: "metashape",
+    storagePath: "metashape-2.jpg",
+    images: [
+      "/restricted/metashape-2.jpg",
+      "/restricted/metashape-3.jpg",
+      "/restricted/metashape-4.jpg",
+      "/restricted/metashape-5.jpg",
+    ],
+  },
+  {
+    key: "artigos",
+    storagePath: "artigo-1.jpg",
+    images: [
+      "/restricted/artigo-1.jpg",
+      "/restricted/artigo-2.jpg",
+      "/restricted/artigo-3.jpg",
+      "/restricted/artigo-4.jpg",
+    ],
+  },
 ] as const;

@@ -132,6 +132,14 @@
       "topo": {
         "title": "Rural survey and land management",
         "description": "Planialtimetric survey, terrain, contour lines and planting follow-up on a rural property."
+      },
+      "metashape": {
+        "title": "Photogrammetric processing",
+        "description": "Metashape workflow: alignment, dense cloud, DTM/DSM, orthomosaic and 3D products beyond the public screenshot."
+      },
+      "artigos": {
+        "title": "Paper figures",
+        "description": "Coastal-research figures used in papers: morphodynamics, time series and drone/GNSS products."
       }
     }
   },

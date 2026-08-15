@@ -24,6 +24,14 @@ sources = {
     "inconsistencias-2.jpg": f"{base}/inconsistencias%20em%20banco%20de%20dados%20espacial/Captura%20de%20tela%202025-11-29%20123143.png",
     "topo.jpg": f"{base}/topografia/1.png",
     "topo-2.jpg": f"{base}/topografia/2.png",
+    "metashape-2.jpg": f"{base}/agisoft/agisoft2.png",
+    "metashape-3.jpg": f"{base}/agisoft/agisoft3.png",
+    "metashape-4.jpg": f"{base}/agisoft/agisoft4.png",
+    "metashape-5.jpg": f"{base}/agisoft/agisoft5.png",
+    "artigo-1.jpg": f"{base}/artigos/artigo1.png",
+    "artigo-2.jpg": f"{base}/artigos/artigo2.png",
+    "artigo-3.jpg": f"{base}/artigos/artigo3.png",
+    "artigo-4.jpg": f"{base}/artigos/artigo4.png",
 }
 
 for name, url in sources.items():
