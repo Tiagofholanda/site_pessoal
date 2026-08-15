@@ -5,7 +5,7 @@ import { getAssetPath } from "@/lib/utils";
 
 export default function RootPage() {
   useEffect(() => {
-    window.location.replace(getAssetPath("/pt"));
+    window.location.replace(getAssetPath("/pt/"));
   }, []);
 
   return (
