@@ -20,10 +20,19 @@ export default async function PrivateProjectsPage({
   const t = await getTranslations("Auth");
 
   return (
-    <article className="section-py mx-auto max-w-5xl px-6">
-      <p className="eyebrow mb-3">Acesso</p>
-      <h1 className="mb-8 text-4xl">{t("galleryTitle")}</h1>
-      <PrivateGallery />
+    <article>
+      <header className="gallery-hero relative overflow-hidden px-6 py-16 sm:py-20">
+        <div className="pointer-events-none absolute -left-16 bottom-0 h-56 w-56 rounded-full bg-teal/20 blur-3xl" />
+        <div className="relative mx-auto max-w-6xl">
+          <p className="eyebrow mb-3 text-teal-light">{t("galleryKicker")}</p>
+          <h1 className="max-w-2xl text-4xl text-white sm:text-5xl">
+            {t("galleryTitle")}
+          </h1>
+        </div>
+      </header>
+      <div className="mx-auto max-w-6xl px-6 py-12 sm:py-16">
+        <PrivateGallery />
+      </div>
     </article>
   );
 }

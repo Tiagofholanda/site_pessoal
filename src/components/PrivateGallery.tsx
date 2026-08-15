@@ -7,7 +7,7 @@ import { hasPrivateAccess, lockPrivateAccess } from "@/lib/access";
 import { createBrowserSupabase, isSupabaseConfigured } from "@/lib/supabase";
 import { PRIVATE_BUCKET, privateProjects } from "@/data/portfolio";
 import { getAssetPath } from "@/lib/utils";
-import { ChevronLeft, ChevronRight, X } from "lucide-react";
+import { ChevronLeft, ChevronRight, LogOut, X } from "lucide-react";
 
 type ProjectImages = Record<string, string[]>;
 
@@ -102,7 +102,13 @@ export default function PrivateGallery() {
   }
 
   if (!ready) {
-    return <p className="text-sm text-muted">{t("Auth.wait")}</p>;
+    return (
+      <div className="space-y-6">
+        <div className="h-24 animate-pulse rounded-2xl bg-white/70" />
+        <div className="h-80 animate-pulse rounded-2xl bg-white/70" />
+        <p className="text-sm text-muted">{t("Auth.wait")}</p>
+      </div>
+    );
   }
 
   const openUrls = open ? images[open.key] ?? [] : [];
@@ -110,99 +116,108 @@ export default function PrivateGallery() {
 
   return (
     <div>
-      <div className="mb-8 flex flex-wrap items-center justify-between gap-4">
-        <p className="max-w-2xl text-sm leading-relaxed text-muted">
-          {t("Auth.galleryIntro")}
-        </p>
+      <div className="mb-10 flex flex-col gap-5 border-b border-border/80 pb-8 sm:flex-row sm:items-end sm:justify-between">
+        <div className="max-w-2xl">
+          <p className="eyebrow mb-3">{t("Auth.galleryMeta", { count: privateProjects.length })}</p>
+          <p className="text-base leading-relaxed text-navy-mid">
+            {t("Auth.galleryIntro")}
+          </p>
+        </div>
         <button
           type="button"
           onClick={logout}
-          className="text-sm text-navy-mid underline decoration-border underline-offset-3 hover:text-teal"
+          className="inline-flex items-center gap-2 self-start rounded-full border border-border bg-white px-4 py-2 text-sm font-medium text-navy transition hover:border-teal hover:text-teal"
         >
+          <LogOut size={15} />
           {t("Auth.logout")}
         </button>
       </div>
 
-      <div className="grid gap-8">
-        {privateProjects.map((item) => {
+      <div className="grid gap-10">
+        {privateProjects.map((item, projectIndex) => {
           const urls = images[item.key] ?? [];
           const current = selected[item.key] ?? 0;
           const currentUrl = urls[current];
+          const number = String(projectIndex + 1).padStart(2, "0");
 
           return (
-            <article
-              key={item.key}
-              className="card overflow-hidden p-0 md:grid md:grid-cols-[1.15fr_0.85fr]"
-            >
+            <article key={item.key} className="card-quiet overflow-hidden">
               {currentUrl ? (
-                <div>
-                  <button
-                    type="button"
-                    onClick={() => setOpen({ key: item.key, index: current })}
-                    className="block w-full text-left"
-                  >
-                    <img
-                      src={currentUrl}
-                      alt={t(`Portfolio.items.${item.key}.title`)}
-                      className="aspect-[16/10] w-full object-cover object-top md:h-full md:aspect-auto"
-                    />
-                  </button>
-                  {urls.length > 1 ? (
-                    <div className="flex gap-2 border-t border-border bg-bg-alt p-3">
-                      {urls.map((url, index) => (
-                        <button
-                          key={url}
-                          type="button"
-                          onClick={() =>
-                            setSelected((prev) => ({
-                              ...prev,
-                              [item.key]: index,
-                            }))
-                          }
-                          className={`overflow-hidden rounded border ${
-                            index === current
-                              ? "border-teal"
-                              : "border-transparent opacity-70 hover:opacity-100"
-                          }`}
-                        >
-                          <img
-                            src={url}
-                            alt=""
-                            className="h-14 w-20 object-cover object-top"
-                          />
-                        </button>
-                      ))}
+                <button
+                  type="button"
+                  onClick={() => setOpen({ key: item.key, index: current })}
+                  className="group relative block w-full text-left"
+                >
+                  <img
+                    src={currentUrl}
+                    alt={t(`Portfolio.items.${item.key}.title`)}
+                    className="aspect-[16/9] w-full object-cover object-top transition duration-500 group-hover:scale-[1.02]"
+                  />
+                  <div className="absolute inset-0 bg-gradient-to-t from-navy/80 via-navy/10 to-transparent" />
+                  <div className="absolute inset-x-0 bottom-0 flex items-end justify-between gap-4 p-6 sm:p-8">
+                    <div>
+                      <p className="eyebrow mb-2 text-teal-light">
+                        {number} · {t("Auth.confidential")}
+                      </p>
+                      <h3 className="text-2xl text-white sm:text-3xl">
+                        {t(`Portfolio.items.${item.key}.title`)}
+                      </h3>
                     </div>
-                  ) : null}
-                </div>
+                    {urls.length > 1 ? (
+                      <span className="rounded-full bg-white/15 px-3 py-1 text-xs font-medium text-white backdrop-blur">
+                        {t("Auth.imageCount", { count: urls.length })}
+                      </span>
+                    ) : null}
+                  </div>
+                </button>
               ) : (
-                <div className="flex aspect-[16/10] items-center justify-center bg-bg-alt text-sm text-muted md:aspect-auto">
+                <div className="flex aspect-[16/9] items-center justify-center bg-bg-alt text-sm text-muted">
                   {t("Auth.imageUnavailable")}
                 </div>
               )}
-              <div className="flex flex-col justify-center p-6 md:p-8">
-                <p className="eyebrow mb-3">{t("Auth.confidential")}</p>
-                <h3 className="mb-3 text-xl">
-                  {t(`Portfolio.items.${item.key}.title`)}
-                </h3>
-                <p className="text-sm leading-relaxed text-muted">
+
+              <div className="grid gap-6 p-6 sm:grid-cols-[1fr_auto] sm:items-center sm:p-8">
+                <p className="max-w-2xl text-sm leading-relaxed text-muted">
                   {t(`Portfolio.items.${item.key}.description`)}
                 </p>
-                {urls.length > 1 ? (
-                  <p className="mt-3 text-xs text-muted">
-                    {t("Auth.imageCount", { count: urls.length })}
-                  </p>
-                ) : null}
                 {currentUrl ? (
                   <button
                     type="button"
                     onClick={() => setOpen({ key: item.key, index: current })}
-                    className="mt-5 self-start text-sm font-medium text-teal hover:underline"
+                    className="self-start text-sm font-semibold text-teal hover:underline"
                   >
                     {t("Auth.viewImage")}
                   </button>
                 ) : null}
               </div>
+
+              {urls.length > 1 ? (
+                <div className="flex gap-2 overflow-x-auto border-t border-border bg-bg-alt/80 px-6 py-4">
+                  {urls.map((url, index) => (
+                    <button
+                      key={url}
+                      type="button"
+                      onClick={() =>
+                        setSelected((prev) => ({
+                          ...prev,
+                          [item.key]: index,
+                        }))
+                      }
+                      className={`shrink-0 overflow-hidden rounded-lg border-2 transition ${
+                        index === current
+                          ? "border-teal shadow-sm"
+                          : "border-transparent opacity-65 hover:opacity-100"
+                      }`}
+                    >
+                      <img
+                        src={url}
+                        alt=""
+                        className="h-16 w-24 object-cover object-top"
+                      />
+                    </button>
+                  ))}
+                </div>
+              ) : null}
             </article>
           );
         })}
@@ -210,62 +225,83 @@ export default function PrivateGallery() {
 
       {open && openItem && openUrls[open.index] ? (
         <div
-          className="fixed inset-0 z-50 flex items-center justify-center bg-navy/80 p-4 backdrop-blur-sm"
+          className="fixed inset-0 z-50 flex flex-col bg-navy/90 backdrop-blur-md"
           onClick={() => setOpen(null)}
           role="dialog"
           aria-modal="true"
           aria-label={t(`Portfolio.items.${openItem.key}.title`)}
         >
-          <button
-            type="button"
-            onClick={() => setOpen(null)}
-            className="absolute right-4 top-4 rounded-full bg-white/90 p-2 text-navy"
-            aria-label={t("Auth.close")}
-          >
-            <X size={18} />
-          </button>
-          {openUrls.length > 1 ? (
-            <>
-              <button
-                type="button"
-                className="absolute left-4 rounded-full bg-white/90 p-2 text-navy"
-                aria-label={t("Auth.previous")}
-                onClick={(event) => {
-                  event.stopPropagation();
-                  setOpen({
-                    key: open.key,
-                    index: (open.index - 1 + openUrls.length) % openUrls.length,
-                  });
-                }}
-              >
-                <ChevronLeft size={18} />
-              </button>
-              <button
-                type="button"
-                className="absolute right-16 top-auto rounded-full bg-white/90 p-2 text-navy md:right-4"
-                aria-label={t("Auth.next")}
-                onClick={(event) => {
-                  event.stopPropagation();
-                  setOpen({
-                    key: open.key,
-                    index: (open.index + 1) % openUrls.length,
-                  });
-                }}
-              >
-                <ChevronRight size={18} />
-              </button>
-            </>
-          ) : null}
-          <img
-            src={openUrls[open.index]}
-            alt={t(`Portfolio.items.${openItem.key}.title`)}
-            className="max-h-[90vh] max-w-6xl rounded-lg object-contain shadow-2xl"
-            onClick={(event) => event.stopPropagation()}
-          />
+          <div className="flex items-center justify-between px-5 py-4 text-white">
+            <div>
+              <p className="eyebrow mb-1 text-teal-light">
+                {t("Auth.confidential")}
+              </p>
+              <p className="text-sm font-medium">
+                {t(`Portfolio.items.${openItem.key}.title`)}
+                {openUrls.length > 1 ? (
+                  <span className="ml-3 text-white/60">
+                    {t("Auth.imageOf", {
+                      current: open.index + 1,
+                      total: openUrls.length,
+                    })}
+                  </span>
+                ) : null}
+              </p>
+            </div>
+            <button
+              type="button"
+              onClick={() => setOpen(null)}
+              className="rounded-full bg-white/15 p-2 text-white hover:bg-white/25"
+              aria-label={t("Auth.close")}
+            >
+              <X size={18} />
+            </button>
+          </div>
+
+          <div className="relative flex flex-1 items-center justify-center px-4 pb-8">
+            {openUrls.length > 1 ? (
+              <>
+                <button
+                  type="button"
+                  className="absolute left-4 rounded-full bg-white/90 p-2.5 text-navy shadow-lg"
+                  aria-label={t("Auth.previous")}
+                  onClick={(event) => {
+                    event.stopPropagation();
+                    setOpen({
+                      key: open.key,
+                      index: (open.index - 1 + openUrls.length) % openUrls.length,
+                    });
+                  }}
+                >
+                  <ChevronLeft size={20} />
+                </button>
+                <button
+                  type="button"
+                  className="absolute right-4 rounded-full bg-white/90 p-2.5 text-navy shadow-lg"
+                  aria-label={t("Auth.next")}
+                  onClick={(event) => {
+                    event.stopPropagation();
+                    setOpen({
+                      key: open.key,
+                      index: (open.index + 1) % openUrls.length,
+                    });
+                  }}
+                >
+                  <ChevronRight size={20} />
+                </button>
+              </>
+            ) : null}
+            <img
+              src={openUrls[open.index]}
+              alt={t(`Portfolio.items.${openItem.key}.title`)}
+              className="max-h-[80vh] max-w-6xl rounded-xl object-contain shadow-2xl"
+              onClick={(event) => event.stopPropagation()}
+            />
+          </div>
         </div>
       ) : null}
 
-      <p className="mt-12">
+      <p className="mt-14">
         <Link href="/" className="link-underline text-sm text-navy">
           ← {t("Auth.back")}
         </Link>

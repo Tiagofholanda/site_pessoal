@@ -132,3 +132,16 @@ h6 {
   background: rgba(42, 140, 110, 0.1);
   border: 1px solid rgba(42, 140, 110, 0.18);
 }
+
+.card-quiet {
+  background: #fff;
+  border: 1px solid var(--color-border);
+  border-radius: 1.15rem;
+  box-shadow: 0 10px 32px rgba(26, 46, 74, 0.06);
+}
+
+.gallery-hero {
+  background:
+    radial-gradient(ellipse 70% 80% at 100% 0%, rgba(42, 140, 110, 0.28), transparent 55%),
+    linear-gradient(135deg, #1a2e4a 0%, #173252 55%, #12382e 100%);
+}
