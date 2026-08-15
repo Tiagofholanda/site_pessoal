@@ -1,0 +1,112 @@
+{
+  "Nav": {
+    "home": "Home",
+    "challenge": "The Challenge",
+    "engine": "SIGTER",
+    "pillars": "Pillars",
+    "portfolio": "Portfolio",
+    "cv": "CV",
+    "contact": "Contact",
+    "cta": "Book a Diagnosis"
+  },
+  "Common": {
+    "footer": {
+      "rights": "All rights reserved. Designed and developed by Tiago Holanda."
+    }
+  },
+  "Hero": {
+    "badge": "GIS Architecture, Land Cadastre & WebGIS",
+    "title": "Territorial Intelligence and Geospatial Sovereignty for Public and Private Operations",
+    "description": "I design end-to-end geographic infrastructures — from PostGIS to production WebGIS. Municipal technical cadastre, land regularization, territorial monitoring and drone photogrammetry, without expensive commercial licenses.",
+    "cta_primary": "Book a Free Diagnosis"
+  },
+  "ValueProp": {
+    "title": "Full Command of the Geospatial Pipeline",
+    "description": "The rare combination of territorial literacy and robust software engineering. I deliver from the spatial data model to the analytical interface, with an open stack and real cadastre governance.",
+    "items": {
+      "databases": {
+        "title": "Scalable Spatial Databases",
+        "description": "PostGIS modeling of parcels, blocks, owners, zoning and administrative processes, with audit trails and Brazil SRID (SIRGAS 2000)."
+      },
+      "integration": {
+        "title": "Enterprise WebGIS",
+        "description": "React apps with Mapbox, Leaflet or OpenLayers, wired to GeoServer, REST APIs and real-time management dashboards."
+      },
+      "analytics": {
+        "title": "Field, Drone and Analysis",
+        "description": "Photogrammetry, GNSS, remote sensing and Python/R automation that turn territory into decisions."
+      }
+    }
+  },
+  "Challenge": {
+    "title": "The License and Fragmented-Data Trap",
+    "subtitle": "Why municipalities and territorial operations pay more and still fail to govern the land?",
+    "description": "Proprietary software locks the cadastre behind per-seat licenses. Spreadsheets, loose shapefiles and off-the-shelf WebGIS do not talk to land regularization or permitting. The result is rework, unaudited data and vendor lock-in.",
+    "card_commercial_title": "The Current Scenario (Licenses and Silos)",
+    "card_commercial_desc": "Rising per-seat cost, data scattered across files, no audit trail, weak privacy controls and no link to the administrative process.",
+    "card_local_title": "The Solution (Territorial Sovereignty)",
+    "card_local_desc": "Your own stack: PostGIS + GeoServer + WebGIS. Predictable cost, sovereign data, business rules of the municipality or operation — and full control of the cadastre."
+  },
+  "Engine": {
+    "badge": "Territorial Management Platform",
+    "title": "SIGTER: the engine of your cadastre",
+    "description": "SIGTER is not a shelf product — it is the architectural foundation I deploy in your operation. Managers see parcels, blocks, land regularization and zoning in real time, with spatial audit and no per-seat license.",
+    "screenshot_alt": "SIGTER analytical dashboard"
+  },
+  "Pillars": {
+    "title": "Three Pillars of Territorial Impact",
+    "subtitle": "The focus is cadastral governance, data sovereignty and operational return.",
+    "routing_title": "Cadastre and Land Regularization",
+    "routing_desc": "Municipal technical cadastre and social/specific land regularization: settlement and parcel geometry, documents, titling and an audit trail aligned with the administrative process.",
+    "bi_title": "WebGIS and Governance",
+    "bi_desc": "Dashboards that confront planned territory with what was executed. Query, edit, official sketches and change history — with privacy and traceability.",
+    "topology_title": "Field and Precision",
+    "topology_desc": "Drones, GNSS and photogrammetry integrated into the spatial database. From field survey to official map, without losing topology or metadata."
+  },
+  "CustomEngineering": {
+    "title": "Custom Geospatial Engineering",
+    "subtitle": "High-impact applications designed and deployed end to end.",
+    "observation_title": "Observation and Territorial Diagnosis",
+    "observation_desc": "APIs and WebGIS with Google Earth Engine, environmental and coastal monitoring, vegetation, mining and automated time-series analysis.",
+    "logistics_title": "Public Management and Municipal Cadastre",
+    "logistics_desc": "Databases and applications for city halls and secretariats: technical cadastre, zoning, social-interest areas and territorial logistics.",
+    "infrastructure_title": "Corporate GIS Infrastructure",
+    "infrastructure_desc": "GeoServer tuning, PostGIS modeling, Docker, large-scale workspaces and performance plugins for fast map rendering."
+  },
+  "Portfolio": {
+    "title": "Delivery Portfolio",
+    "subtitle": "Real projects in WebGIS, spatial databases, photogrammetry and territorial management.",
+    "items": {
+      "webgis_municipal": {
+        "title": "Municipal WebGIS",
+        "description": "Corporate geoportal for large-scale operations, with cadastral layers and management dashboards."
+      },
+      "webgis_devgis": {
+        "title": "Corporate Geoportal",
+        "description": "React + Mapbox GL JS, REST APIs, PostGIS and internal mapping libraries for high data volume."
+      },
+      "webgis_audit": {
+        "title": "Aerial Survey Audit",
+        "description": "WebGIS to review flights, coverage and photogrammetric product quality."
+      },
+      "webgis_epi": {
+        "title": "Epidemiological Surveillance",
+        "description": "Operational map with AI for outbreak detection and territorial health decision support."
+      },
+      "spatial_db": {
+        "title": "Spatial Database Management",
+        "description": "Administration of activities and city blocks, topological consistency and inconsistency reports."
+      },
+      "aero": {
+        "title": "High-Precision Photogrammetry",
+        "description": "Drone and GNSS surveys processed in Metashape/Pix4D for official cartographic products."
+      }
+    }
+  },
+  "Contact": {
+    "title": "Ready to govern your territory?",
+    "description": "Request a free 30-minute technical diagnosis. I review your cadastre, WebGIS and GIS infrastructure and outline the path to a sovereign operation.",
+    "cta_main": "Book a Technical Diagnosis",
+    "cta_email": "Or email tfholanda@gmail.com"
+  }
+}

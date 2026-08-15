@@ -1,0 +1,112 @@
+{
+  "Nav": {
+    "home": "Início",
+    "challenge": "O Desafio",
+    "engine": "SIGTER",
+    "pillars": "Pilares",
+    "portfolio": "Portfólio",
+    "cv": "Currículo",
+    "contact": "Contato",
+    "cta": "Agendar Diagnóstico"
+  },
+  "Common": {
+    "footer": {
+      "rights": "Todos os direitos reservados. Projetado e desenvolvido por Tiago Holanda."
+    }
+  },
+  "Hero": {
+    "badge": "Arquitetura GIS, Cadastro Territorial & WebGIS",
+    "title": "Inteligência Territorial e Soberania Geoespacial para o Setor Público e Privado",
+    "description": "Desenho infraestruturas geográficas de ponta a ponta — do banco PostGIS ao WebGIS em produção. Cadastro técnico municipal, REURB, monitoramento territorial e aerofotogrametria com drones, sem dependência de licenças comerciais caras.",
+    "cta_primary": "Agendar Diagnóstico Gratuito"
+  },
+  "ValueProp": {
+    "title": "Domínio Completo da Esteira Geoespacial",
+    "description": "A união entre a leitura estrutural do território e a engenharia de software. Entrego desde o modelo de dados espacial até a interface analítica, com stack aberta e governança real do cadastro.",
+    "items": {
+      "databases": {
+        "title": "Bancos Espaciais Escaláveis",
+        "description": "Modelagem PostGIS de lotes, quadras, proprietários, zoneamento e processos administrativos, com auditoria e SRID Brasil (SIRGAS 2000)."
+      },
+      "integration": {
+        "title": "WebGIS Corporativo",
+        "description": "Aplicações React com Mapbox, Leaflet ou OpenLayers, acopladas a GeoServer, APIs REST e painéis de gestão em tempo real."
+      },
+      "analytics": {
+        "title": "Campo, Drone e Análise",
+        "description": "Aerofotogrametria, GNSS, sensoriamento remoto e automações em Python/R que transformam o território em decisão."
+      }
+    }
+  },
+  "Challenge": {
+    "title": "A Armadilha das Licenças e dos Dados Fragmentados",
+    "subtitle": "Por que prefeituras e operações territoriais pagam caro e ainda não governam o território?",
+    "description": "Softwares proprietários travam o cadastro em licença por usuário. Planilhas, shapefiles soltos e WebGIS de prateleira não conversam com REURB, CTM ou licenciamento. O resultado é retrabalho, dados sem auditoria e dependência de fornecedor.",
+    "card_commercial_title": "O Cenário Atual (Licenças e Silos)",
+    "card_commercial_desc": "Custo crescente por assento, dados espalhados em arquivos, sem trilha de auditoria, sem LGPD e sem integração com o processo administrativo.",
+    "card_local_title": "A Solução (Soberania Territorial)",
+    "card_local_desc": "Infraestrutura própria: PostGIS + GeoServer + WebGIS. Custo previsível, dados soberanos, regras de negócio do município ou da operação — e controle total do cadastro."
+  },
+  "Engine": {
+    "badge": "Plataforma de Gestão Territorial",
+    "title": "SIGTER: o motor do seu cadastro",
+    "description": "O SIGTER não é um produto de prateleira — é a fundação arquitetural que implanto na sua operação. Gestores visualizam lotes, quadras, REURB e zoneamento em tempo real, com auditoria espacial e sem licença por assento.",
+    "screenshot_alt": "Painel analítico do SIGTER"
+  },
+  "Pillars": {
+    "title": "Três Pilares de Impacto no Território",
+    "subtitle": "O foco está na governança cadastral, na soberania dos dados e no retorno operacional.",
+    "routing_title": "Cadastro e REURB",
+    "routing_desc": "CTM, cadastro imobiliário, REURB-S e REURB-E: geometria de núcleos e lotes, documentos, titulação e trilha de auditoria alinhada ao processo administrativo.",
+    "bi_title": "WebGIS e Governança",
+    "bi_desc": "Painéis que confrontam o território planejado com o executado. Consulta, edição, croqui e histórico de alterações — com LGPD e rastreabilidade.",
+    "topology_title": "Campo e Precisão",
+    "topology_desc": "Drones, GNSS e aerofotogrametria integrados ao banco espacial. Do levantamento em campo ao mapa oficial, sem perda de topologia nem de metadados."
+  },
+  "CustomEngineering": {
+    "title": "Engenharia Geoespacial Sob Medida",
+    "subtitle": "Aplicações de alto impacto desenhadas e implantadas de ponta a ponta.",
+    "observation_title": "Observação e Diagnóstico Territorial",
+    "observation_desc": "APIs e WebGIS com Google Earth Engine, monitoramento ambiental e costeiro, vegetação, mineração e análises automatizadas de séries temporais.",
+    "logistics_title": "Gestão Pública e Cadastro Municipal",
+    "logistics_desc": "Bancos e aplicações para prefeituras e secretarias: cadastro técnico, zoneamento, áreas de interesse social e logística territorial.",
+    "infrastructure_title": "Infraestrutura GIS Corporativa",
+    "infrastructure_desc": "Tuning de GeoServer, modelagem PostGIS, Docker, workspaces em escala e plugins de performance para renderização rápida de mapas."
+  },
+  "Portfolio": {
+    "title": "Portfólio de Entregas",
+    "subtitle": "Projetos reais em WebGIS, banco espacial, aerofotogrametria e gestão territorial.",
+    "items": {
+      "webgis_municipal": {
+        "title": "WebGIS Municipal",
+        "description": "Geoportal corporativo para operação em larga escala, com camadas cadastrais e dashboards de gestão."
+      },
+      "webgis_devgis": {
+        "title": "Geoportal Corporativo",
+        "description": "React + Mapbox GL JS, APIs REST, PostGIS e bibliotecas internas de mapeamento para alto volume de dados."
+      },
+      "webgis_audit": {
+        "title": "Auditoria de Aerolevantamentos",
+        "description": "WebGIS para conferência de voos, cobertura e qualidade de produtos fotogramétricos."
+      },
+      "webgis_epi": {
+        "title": "Vigilância Epidemiológica",
+        "description": "Mapa operacional com IA para detecção de focos e apoio à decisão em saúde territorial."
+      },
+      "spatial_db": {
+        "title": "Gestão de Banco Espacial",
+        "description": "Administração de atividades e quadras, consistência topológica e relatórios de inconsistências."
+      },
+      "aero": {
+        "title": "Aerofotogrametria de Alta Precisão",
+        "description": "Levantamentos com drone, GNSS e processamento em Metashape/Pix4D para produtos cartográficos oficiais."
+      }
+    }
+  },
+  "Contact": {
+    "title": "Pronto para governar o seu território?",
+    "description": "Solicite um diagnóstico técnico gratuito de 30 minutos. Avalio o cadastro, o WebGIS e a infraestrutura GIS atuais e apresento o caminho para uma operação soberana.",
+    "cta_main": "Agendar Diagnóstico Técnico",
+    "cta_email": "Ou envie um e-mail para tfholanda@gmail.com"
+  }
+}
