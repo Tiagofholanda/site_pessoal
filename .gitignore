@@ -24,3 +24,4 @@ next-env.d.ts
 
 # Currículos com dados pessoais (endereço, documentos)
 *.pdf
+scripts/_fitec_tmp/

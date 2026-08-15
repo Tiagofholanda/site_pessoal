@@ -1,6 +1,11 @@
 export const PRIVATE_BUCKET = "projetos-privados";
 
 export const publicProjects = [
+  {
+    key: "fitec",
+    image: "/portfolio/fitec.jpg",
+    href: "https://github.com/Tiagofholanda/Dashboard_FITec",
+  },
   { key: "coastal" },
   { key: "research" },
   { key: "teaching" },

@@ -80,6 +80,10 @@
     "requestAccess": "Pedir acesso",
     "hasAccess": "Já tenho login",
     "public": {
+      "fitec": {
+        "title": "Dashboard FITec",
+        "description": "Painel Streamlit para acompanhar pontos de campo, progresso de meta, extensão da rede e mapa do levantamento. Código aberto no GitHub."
+      },
       "coastal": {
         "title": "Pesquisa costeira",
         "description": "Morfodinâmica de praia e dunas com drone, GNSS e séries temporais. Dissertação na Praia do Paiva (UFPE) e tese em andamento na UFF (LAGEF / H2O / LACCOST), com participação em MADEPD e PELD-Tamandaré."

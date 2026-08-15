@@ -1,4 +1,5 @@
 import {
+  BarChart3,
   Database,
   Globe2,
   GraduationCap,
@@ -9,7 +10,7 @@ import {
 } from "lucide-react";
 import { getTranslations, setRequestLocale } from "next-intl/server";
 import { Link } from "@/i18n/routing";
-import { getAccessRequestUrl, getWhatsAppUrl } from "@/lib/utils";
+import { getAccessRequestUrl, getAssetPath, getWhatsAppUrl } from "@/lib/utils";
 import { cvLinks } from "@/data/cv";
 import { privateProjects, publicProjects } from "@/data/portfolio";
 import MapDecor from "@/components/MapDecor";
@@ -30,6 +31,7 @@ const serviceKeys = [
 ] as const;
 
 const publicIcons = {
+  fitec: BarChart3,
   coastal: MapPinned,
   research: Globe2,
   teaching: GraduationCap,
@@ -158,20 +160,46 @@ export default async function Home({
           </div>
 
           <h3 className="mb-6 text-xl">{t("Portfolio.publicTitle")}</h3>
-          <div className="mb-12 grid gap-6 md:grid-cols-3">
+          <div className="mb-12 grid gap-6 md:grid-cols-2">
             {publicProjects.map((item) => {
               const Icon = publicIcons[item.key];
-              return (
-                <article key={item.key} className="card p-7">
-                  <div className="icon-chip mb-4">
-                    <Icon className="text-teal" size={20} />
-                  </div>
+              const image = "image" in item ? item.image : undefined;
+              const href = "href" in item ? item.href : undefined;
+              const content = (
+                <>
+                  {image ? (
+                    <img
+                      src={getAssetPath(image)}
+                      alt={t(`Portfolio.public.${item.key}.title`)}
+                      className="mb-4 aspect-[16/9] w-full rounded-lg border border-border object-cover object-top"
+                    />
+                  ) : (
+                    <div className="icon-chip mb-4">
+                      <Icon className="text-teal" size={20} />
+                    </div>
+                  )}
                   <h4 className="mb-2 text-lg">
                     {t(`Portfolio.public.${item.key}.title`)}
                   </h4>
                   <p className="text-sm leading-relaxed text-muted">
                     {t(`Portfolio.public.${item.key}.description`)}
                   </p>
+                </>
+              );
+
+              return href ? (
+                <a
+                  key={item.key}
+                  href={href}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="card block p-5 no-underline"
+                >
+                  {content}
+                </a>
+              ) : (
+                <article key={item.key} className="card p-7">
+                  {content}
                 </article>
               );
             })}

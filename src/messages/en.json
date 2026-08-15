@@ -80,6 +80,10 @@
     "requestAccess": "Request access",
     "hasAccess": "I already have a login",
     "public": {
+      "fitec": {
+        "title": "FITec dashboard",
+        "description": "Streamlit dashboard to track field points, goal progress, network length and the survey map. Open source on GitHub."
+      },
       "coastal": {
         "title": "Coastal research",
         "description": "Beach and dune morphodynamics with drones, GNSS and time series. MSc on Paiva Beach (UFPE) and a PhD in progress at UFF (LAGEF / H2O / LACCOST), including MADEPD and PELD-Tamandaré."
