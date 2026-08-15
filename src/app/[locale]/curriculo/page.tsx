@@ -61,7 +61,8 @@ export default async function CurriculumPage({
                   href={link.href}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="link-underline"
+                  className="link-underline notranslate"
+                  translate="no"
                 >
                   {link.label}
                 </a>

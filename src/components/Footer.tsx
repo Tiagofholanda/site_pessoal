@@ -24,7 +24,7 @@ export default function Footer() {
     { href: cvLinks.lattes, label: "Lattes" },
     { href: cvLinks.orcid, label: "ORCID" },
     { href: cvLinks.scholar, label: "Google Scholar" },
-  ];
+  ] as const;
 
   return (
     <footer className="border-t border-border px-6 py-14">
@@ -81,7 +81,8 @@ export default function Footer() {
                   href={profile.href}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="hover:text-teal"
+                  className="notranslate hover:text-teal"
+                  translate="no"
                 >
                   {profile.label}
                 </a>
