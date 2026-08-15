@@ -1,0 +1,7 @@
+User-agent: *
+Disallow: /restricted/
+Disallow: /site_pessoal/restricted/
+Disallow: /pt/projetos-privados
+Disallow: /en/projetos-privados
+Disallow: /site_pessoal/pt/projetos-privados
+Disallow: /site_pessoal/en/projetos-privados
