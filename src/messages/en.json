@@ -28,8 +28,7 @@
   "Facts": {
     "articles": "articles in scientific journals",
     "citations": "citations on Google Scholar",
-    "reviewer": "journals I review for",
-    "cities": "municipalities served by the WebGIS I maintained in MG"
+    "reviewer": "journals I review for"
   },
   "Services": {
     "title": "Services",

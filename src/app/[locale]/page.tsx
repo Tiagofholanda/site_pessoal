@@ -21,7 +21,6 @@ const facts = [
   { value: "19", key: "articles" },
   { value: "55", key: "citations" },
   { value: "8", key: "reviewer" },
-  { value: "600+", key: "cities" },
 ] as const;
 
 const serviceKeys = [
@@ -113,7 +112,7 @@ export default async function Home({
 
       <section className="border-y border-border/70 bg-white/70">
         <div className="mx-auto max-w-6xl px-6 py-8">
-          <dl className="grid grid-cols-2 gap-6 sm:grid-cols-4">
+          <dl className="grid grid-cols-3 gap-6">
             {facts.map((fact) => (
               <div key={fact.key}>
                 <dt className="font-[family-name:var(--font-display)] text-3xl text-navy">
