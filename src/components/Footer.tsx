@@ -1,150 +1,107 @@
 "use client";
 
 import { Link } from "@/i18n/routing";
-import { useTranslations } from "next-intl";
-import { Github, Linkedin, Mail, MapPin, MessageCircle } from "lucide-react";
-import { useLocale } from "next-intl";
-import { getAssetPath, getWhatsAppUrl } from "@/lib/utils";
+import { useLocale, useTranslations } from "next-intl";
+import { getWhatsAppUrl } from "@/lib/utils";
+import { cvLinks } from "@/data/cv";
 
 export default function Footer() {
   const t = useTranslations();
   const locale = useLocale();
   const currentYear = new Date().getFullYear();
 
-  const socialLinks = [
-    {
-      icon: <Linkedin size={18} />,
-      href: "https://www.linkedin.com/in/tiago-holanda-082928141/",
-      label: "LinkedIn",
-    },
-    {
-      icon: <Github size={18} />,
-      href: "https://github.com/Tiagofholanda",
-      label: "GitHub",
-    },
-    {
-      icon: <Mail size={18} />,
-      href: "mailto:tfholanda@gmail.com",
-      label: "E-mail",
-    },
+  const navLinks = [
+    { href: "/#servicos", label: t("Nav.services") },
+    { href: "/#projetos", label: t("Nav.portfolio") },
+    { href: "/#metodo", label: t("Nav.method") },
+    { href: "/curriculo", label: t("Nav.cv") },
+    { href: "/#contato", label: t("Nav.contact") },
+  ];
+
+  const profiles = [
+    { href: cvLinks.linkedin, label: "LinkedIn" },
+    { href: cvLinks.github, label: "GitHub" },
+    { href: cvLinks.lattes, label: "Lattes" },
+    { href: cvLinks.orcid, label: "ORCID" },
+    { href: cvLinks.scholar, label: "Google Scholar" },
   ];
 
   return (
-    <footer className="border-t border-border bg-navy text-white">
-      <div className="mx-auto grid max-w-6xl gap-10 px-6 py-14 md:grid-cols-3">
+    <footer className="border-t border-border px-6 py-14">
+      <div className="mx-auto grid max-w-5xl gap-10 sm:grid-cols-3">
         <div>
-          <div className="mb-4 flex items-center gap-2.5">
-            <img
-              src={getAssetPath("/logo.svg")}
-              alt="THGIS"
-              width={32}
-              height={32}
-              className="h-8 w-8 brightness-0 invert"
-            />
-            <span className="font-[family-name:var(--font-sora)] text-lg font-bold">
-              THGIS
-            </span>
-          </div>
-          <p className="mb-5 text-sm leading-relaxed text-white/70">
-            {t("Hero.description")}
+          <p className="mb-3 font-[family-name:var(--font-display)] text-lg font-semibold text-navy">
+            Tiago Holanda
           </p>
-          <div className="flex gap-3">
-            {socialLinks.map((social) => (
-              <a
-                key={social.label}
-                href={social.href}
-                target="_blank"
-                rel="noopener noreferrer"
-                aria-label={social.label}
-                className="flex h-9 w-9 items-center justify-center rounded-full bg-white/10 text-white transition hover:bg-teal"
-              >
-                {social.icon}
-              </a>
-            ))}
-          </div>
+          <p className="max-w-xs text-sm leading-relaxed text-muted">
+            {t("Common.footer.tagline")}
+          </p>
         </div>
 
         <div>
-          <h4 className="mb-4 text-sm font-semibold tracking-wide text-white">
-            {t("Nav.home") === "Início" ? "Navegação" : "Navigation"}
-          </h4>
-          <ul className="space-y-2.5 text-sm text-white/70">
-            <li>
-              <Link href="/#inicio" className="hover:text-white">
-                {t("Nav.home")}
-              </Link>
-            </li>
-            <li>
-              <Link href="/#desafio" className="hover:text-white">
-                {t("Nav.challenge")}
-              </Link>
-            </li>
-            <li>
-              <Link href="/#sigter" className="hover:text-white">
-                {t("Nav.engine")}
-              </Link>
-            </li>
-            <li>
-              <Link href="/#pilares" className="hover:text-white">
-                {t("Nav.pillars")}
-              </Link>
-            </li>
-            <li>
-              <Link href="/curriculo" className="hover:text-white">
-                {t("Nav.cv")}
-              </Link>
-            </li>
-            <li>
-              <Link href="/#contato" className="hover:text-white">
-                {t("Nav.contact")}
-              </Link>
-            </li>
+          <p className="eyebrow mb-4">{t("Common.footer.navigation")}</p>
+          <ul className="space-y-2.5 text-sm text-navy-mid">
+            {navLinks.map((link) => (
+              <li key={link.href}>
+                <Link href={link.href} className="hover:text-teal">
+                  {link.label}
+                </Link>
+              </li>
+            ))}
           </ul>
         </div>
 
         <div>
-          <h4 className="mb-4 text-sm font-semibold tracking-wide text-white">
-            {t("Nav.contact")}
-          </h4>
-          <ul className="space-y-3 text-sm text-white/70">
-            <li className="flex items-center gap-2">
-              <MessageCircle size={16} />
+          <p className="eyebrow mb-4">{t("Nav.contact")}</p>
+          <ul className="space-y-2.5 text-sm text-navy-mid">
+            <li>
               <a
                 href={getWhatsAppUrl(locale)}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="hover:text-white"
+                className="hover:text-teal"
               >
-                (81) 99667-4681
+                {t("Contact.cta_phone")}
               </a>
             </li>
-            <li className="flex items-center gap-2">
-              <Mail size={16} />
-              <a href="mailto:tfholanda@gmail.com" className="hover:text-white">
-                tfholanda@gmail.com
+            <li>
+              <a
+                href={`mailto:${t("Contact.cta_email")}`}
+                className="hover:text-teal"
+              >
+                {t("Contact.cta_email")}
               </a>
             </li>
-            <li className="flex items-center gap-2">
-              <MapPin size={16} />
-              Brasil / Remoto
-            </li>
+          </ul>
+          <p className="eyebrow mb-3 mt-6">Perfis</p>
+          <ul className="flex flex-wrap gap-x-4 gap-y-2 text-sm text-navy-mid">
+            {profiles.map((profile) => (
+              <li key={profile.label}>
+                <a
+                  href={profile.href}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="hover:text-teal"
+                >
+                  {profile.label}
+                </a>
+              </li>
+            ))}
           </ul>
         </div>
       </div>
 
-      <div className="border-t border-white/10">
-        <div className="mx-auto flex max-w-6xl flex-col items-start justify-between gap-3 px-6 py-5 text-xs text-white/50 sm:flex-row sm:items-center">
-          <p>
-            © {currentYear} Tiago Holanda Geospatial. {t("Common.footer.rights")}
-          </p>
-          <div className="flex gap-4">
-            <Link href="/privacidade" className="hover:text-white">
-              {t("Nav.home") === "Início" ? "Privacidade" : "Privacy"}
-            </Link>
-            <Link href="/termos" className="hover:text-white">
-              {t("Nav.home") === "Início" ? "Termos" : "Terms"}
-            </Link>
-          </div>
+      <div className="mx-auto mt-12 flex max-w-5xl flex-col gap-3 border-t border-border pt-6 text-xs text-muted sm:flex-row sm:items-center sm:justify-between">
+        <p>
+          © {currentYear} Tiago Fernando de Holanda. {t("Common.footer.rights")}
+        </p>
+        <div className="flex gap-5">
+          <Link href="/privacidade" className="hover:text-teal">
+            {locale === "pt" ? "Privacidade" : "Privacy"}
+          </Link>
+          <Link href="/termos" className="hover:text-teal">
+            {locale === "pt" ? "Termos" : "Terms"}
+          </Link>
         </div>
       </div>
     </footer>

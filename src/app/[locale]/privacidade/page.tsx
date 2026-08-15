@@ -20,8 +20,8 @@ export default async function PrivacyPage({
       <div className="space-y-4 text-sm leading-relaxed text-muted">
         <p>
           {isPt
-            ? "Este site é institucional. Não coletamos dados pessoais além dos que você envia voluntariamente por e-mail ou WhatsApp ao solicitar um diagnóstico."
-            : "This is an institutional website. We do not collect personal data beyond what you voluntarily send by email or WhatsApp when requesting a diagnosis."}
+            ? "Este é um site pessoal e profissional. Não coleto dados pessoais além dos que você envia voluntariamente por e-mail ou WhatsApp ao entrar em contato."
+            : "This is a personal and professional website. I do not collect personal data beyond what you voluntarily send by email or WhatsApp when getting in touch."}
         </p>
         <p>
           {isPt

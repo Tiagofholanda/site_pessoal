@@ -1,4 +1,4 @@
-import { Sora, DM_Sans } from "next/font/google";
+import { Source_Serif_4, Inter } from "next/font/google";
 import "../globals.css";
 import { routing } from "@/i18n/routing";
 import { notFound } from "next/navigation";
@@ -7,16 +7,17 @@ import { NextIntlClientProvider } from "next-intl";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 
-const sora = Sora({
+const serif = Source_Serif_4({
   subsets: ["latin"],
-  variable: "--font-sora",
-  weight: ["400", "600", "700"],
+  variable: "--font-serif",
+  weight: ["400", "600"],
+  style: ["normal", "italic"],
 });
 
-const dmSans = DM_Sans({
+const sans = Inter({
   subsets: ["latin"],
-  variable: "--font-dm-sans",
-  weight: ["400", "500"],
+  variable: "--font-sans",
+  weight: ["400", "500", "600"],
 });
 
 export function generateStaticParams() {
@@ -27,9 +28,9 @@ export const dynamic = "force-static";
 export const dynamicParams = false;
 
 export const metadata = {
-  title: "Tiago Holanda Geospatial | Geotecnologias, Geoinformação e Soluções Espaciais",
+  title: "Tiago Holanda — Geoprocessamento, WebGIS e dados espaciais",
   description:
-    "Transformamos dados geográficos em conhecimento, tecnologia e soluções. GIS, GeoPortais, SIG Web, bancos espaciais, sensoriamento remoto e inteligência territorial.",
+    "Geógrafo, mestre em Ciências Geodésicas e doutorando em Geografia (UFF). Desenvolvo plataformas WebGIS, bancos de dados espaciais e rotinas de geoprocessamento para prefeituras, consultorias e projetos de engenharia.",
 };
 
 export default async function LocaleLayout({
@@ -49,7 +50,7 @@ export default async function LocaleLayout({
   const messages = await getMessages();
 
   return (
-    <html lang={locale} className={`${sora.variable} ${dmSans.variable}`}>
+    <html lang={locale} className={`${serif.variable} ${sans.variable}`}>
       <body className="min-h-screen bg-background antialiased">
         <NextIntlClientProvider messages={messages}>
           <Navbar />

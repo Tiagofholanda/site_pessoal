@@ -19,26 +19,19 @@ export default function LanguageSwitcher() {
   }
 
   return (
-    <div className="inline-flex items-center rounded-full bg-bg-alt p-1 border border-border">
+    <div className="flex items-center gap-2 text-xs font-medium">
       <button
         type="button"
         onClick={() => onLanguageChange("pt")}
-        className={`px-3 py-1 text-xs font-bold rounded-full transition-all ${
-          locale === "pt"
-            ? "bg-white text-navy shadow-sm"
-            : "text-muted hover:text-navy"
-        }`}
+        className={locale === "pt" ? "text-navy" : "text-muted hover:text-navy"}
       >
         PT
       </button>
+      <span className="text-border">/</span>
       <button
         type="button"
         onClick={() => onLanguageChange("en")}
-        className={`px-3 py-1 text-xs font-bold rounded-full transition-all ${
-          locale === "en"
-            ? "bg-white text-navy shadow-sm"
-            : "text-muted hover:text-navy"
-        }`}
+        className={locale === "en" ? "text-navy" : "text-muted hover:text-navy"}
       >
         EN
       </button>

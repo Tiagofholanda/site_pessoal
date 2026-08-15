@@ -1,113 +1,113 @@
 {
   "Nav": {
     "home": "Início",
-    "challenge": "Abordagem",
-    "engine": "Soluções",
-    "pillars": "Foco",
-    "portfolio": "Portfólio",
+    "services": "Serviços",
+    "method": "Método",
+    "portfolio": "Projetos",
     "cv": "Currículo",
     "contact": "Contato",
-    "cta": "Falar no WhatsApp"
+    "cta": "WhatsApp"
   },
   "Common": {
     "footer": {
-      "rights": "Todos os direitos reservados. Projetado e desenvolvido por Tiago Holanda."
+      "tagline": "Geoprocessamento, WebGIS e bancos de dados espaciais para gestão territorial, meio ambiente e engenharia.",
+      "navigation": "Navegação",
+      "rights": "Todos os direitos reservados."
     }
   },
   "Hero": {
-    "badge": "Geotecnologias, Geoinformação e Soluções Espaciais",
-    "title": "Dados geográficos viram conhecimento, tecnologia e solução.",
-    "description": "Integramos Geociências, geotecnologias, software e pesquisa aplicada — da ciência ao produto espacial.",
-    "cta_primary": "Conversar no WhatsApp"
+    "role": "Geoprocessamento, WebGIS e bancos de dados espaciais",
+    "description": "Desenvolvo plataformas de mapa, organizo bases de dados espaciais e automatizo rotinas de geoprocessamento para prefeituras, consultorias ambientais e projetos de engenharia. Em paralelo, pesquiso dinâmica costeira com drone, GNSS e sensoriamento remoto.",
+    "credentials": "Geógrafo (UFPE) · Mestre em Ciências Geodésicas e Tecnologias da Geoinformação (UFPE) · Doutorando em Geografia (UFF)",
+    "cta_primary": "Falar sobre um projeto",
+    "cta_secondary": "Ver projetos",
+    "portrait_alt": "Tiago Holanda"
   },
-  "ValueProp": {
-    "title": "Uma abordagem multidisciplinar",
-    "description": "Mais do que produzir mapas ou processar dados, compreendemos fenômenos territoriais e transformamos informações espaciais em ferramentas capazes de apoiar decisões, otimizar processos e criar novos produtos e serviços.",
+  "Facts": {
+    "articles": "artigos em periódicos científicos",
+    "citations": "citações no Google Scholar",
+    "reviewer": "periódicos em que atuo como revisor",
+    "cities": "prefeituras atendidas pelo WebGIS que mantive em MG"
+  },
+  "Services": {
+    "title": "Serviços",
+    "intro": "Trabalho nas três frentes que costumam aparecer juntas em um projeto territorial: a base de dados, a aplicação que consulta essa base e o levantamento que a alimenta.",
     "items": {
-      "databases": {
-        "title": "Ciência aplicada",
-        "description": "Investigamos métodos, tecnologias e aplicações com resultados concretos em meio ambiente, território, sustentabilidade, monitoramento espacial e gestão de recursos."
+      "webgis": {
+        "title": "Plataformas WebGIS e geoportais",
+        "description": "Aplicações de mapa para consulta, edição e publicação de dados. React e Mapbox GL na interface, GeoServer e GeoNode na publicação de camadas, controle de acesso, filtros temáticos e relatórios para as equipes técnicas."
       },
-      "integration": {
-        "title": "Perspectiva empresarial",
-        "description": "Identificamos problemas, desenvolvemos soluções tecnológicas e transformamos conhecimento científico em aplicações para empresas, organizações, instituições públicas e projetos de inovação."
+      "data": {
+        "title": "Bancos de dados espaciais",
+        "description": "Modelagem e manutenção de bases em PostgreSQL/PostGIS: importação em lote, regras de validação, auditoria de consistência, sincronização entre bancos e automação em Python e R."
       },
-      "analytics": {
-        "title": "Inteligência territorial",
-        "description": "Combinamos geoprocessamento, SIG, sensoriamento remoto, cartografia, geoinformação e desenvolvimento de aplicações geoespaciais sob medida."
+      "field": {
+        "title": "Levantamento e sensoriamento remoto",
+        "description": "Aerofotogrametria com drone e GNSS (RTK/PPK), processamento em Metashape e Pix4D, ortomosaicos, MDT/MDS, cálculo de volumes e conferência técnica de campanhas de aerolevantamento."
       }
     }
   },
-  "Challenge": {
-    "title": "Da pesquisa ao produto",
-    "subtitle": "A pesquisa pode gerar métodos. Os métodos podem gerar tecnologias. E as tecnologias podem se transformar em soluções.",
-    "description": "Essa é a lógica que orienta o projeto: aproximar pesquisa, desenvolvimento tecnológico e aplicação prática, criando soluções geoespaciais capazes de gerar valor científico, ambiental e econômico. Cada projeto pode partir de uma pergunta científica, uma necessidade empresarial, um problema ambiental ou um desafio territorial.",
-    "card_commercial_title": "Dados fragmentados",
-    "card_commercial_desc": "Arquivos soltos, mapas isolados e bases que não conversam entre si. A informação geográfica fica restrita a entregas pontuais, sem virar infraestrutura reutilizável.",
-    "card_local_title": "Infraestrutura espacial",
-    "card_local_desc": "Banco de dados espacial organiza. O GIS analisa. O SIG Web disponibiliza. O GeoPortal conecta usuários e projetos. As aplicações transformam tudo isso em ferramentas para as equipes."
-  },
-  "Engine": {
-    "badge": "Soluções GIS, GeoPortal e Inteligência Espacial",
-    "title": "Tecnologia espacial aplicada ao negócio",
-    "description": "Desenvolvemos soluções geoespaciais para empresas, consultorias e organizações que precisam transformar dados espaciais em informação, análise e tomada de decisão. Plataformas e aplicações para organizar, integrar, analisar e disponibilizar informações geográficas em ambientes digitais.",
-    "screenshot_alt": "Painel de GeoPortal e inteligência espacial"
-  },
-  "Pillars": {
-    "title": "Nosso foco",
-    "subtitle": "Entender o espaço. Transformar dados em informação. Transformar informação em tecnologia. E transformar tecnologia em solução.",
-    "routing_title": "GeoPortais e SIG Web",
-    "routing_desc": "GeoPortais corporativos e institucionais, aplicações geográficas interativas, dashboards e mapas para consulta, visualização e compartilhamento de informações territoriais.",
-    "bi_title": "Bancos e análise espacial",
-    "bi_desc": "Bancos de dados espaciais, geoprocessamento, integração de fontes geográficas e sistemas para gerenciamento, monitoramento territorial e ambiental.",
-    "topology_title": "Campo e sensoriamento",
-    "topology_desc": "Plataformas para coleta e visualização de dados de campo, imagens de satélite, aerofotogrametria e aplicações específicas para consultorias e projetos sob medida."
-  },
-  "CustomEngineering": {
-    "title": "Soluções sob medida para consultorias e projetos",
-    "subtitle": "Cada empresa possui processos, dados e necessidades diferentes. Desenvolvemos de forma modular — de uma aplicação específica a uma plataforma geoespacial completa.",
-    "observation_title": "Consultorias ambientais e projetos costeiros",
-    "observation_desc": "Integramos uso e ocupação do solo, linha de costa, áreas protegidas, ecossistemas, infraestrutura, levantamentos de campo e imagens de satélite em GeoPortais e SIG Web para equipes, gestores e clientes.",
-    "logistics_title": "Operação da própria empresa",
-    "logistics_desc": "Coletar → armazenar → processar → analisar → visualizar → compartilhar → entregar. Reduza a fragmentação dos dados e crie uma estrutura tecnológica reutilizável em diferentes contratos e estudos.",
-    "infrastructure_title": "Stack integrada",
-    "infrastructure_desc": "Banco de Dados Espacial + GIS + SIG Web + GeoPortal + APIs + Aplicações + Dados de Campo + Sensoriamento Remoto — solução integrada para o problema real da empresa."
+  "Method": {
+    "title": "Como conduzo um projeto",
+    "intro": "A ordem importa. Aplicação construída sobre base desorganizada vira retrabalho em poucos meses.",
+    "steps": {
+      "diagnosis": {
+        "title": "Diagnóstico",
+        "description": "Levanto quais dados já existem, como são coletados hoje e quem usa cada informação. O resultado é um retrato honesto do que está pronto e do que falta."
+      },
+      "structure": {
+        "title": "Estrutura de dados",
+        "description": "Defino o modelo no PostGIS, as regras de validação e o fluxo de importação, incluindo o histórico de alterações necessário para auditoria."
+      },
+      "application": {
+        "title": "Aplicação",
+        "description": "Desenvolvo o WebGIS, o painel ou a rotina de automação sobre essa base, com o recorte que a equipe realmente usa no dia a dia."
+      },
+      "operation": {
+        "title": "Operação e transferência",
+        "description": "Publico, documento e treino a equipe. O objetivo é o cliente seguir operando sem depender de mim para tarefas de rotina."
+      }
+    }
   },
   "Portfolio": {
-    "title": "Portfólio de entregas",
-    "subtitle": "Capturas reais de projetos em GeoPortal, SIG Web, banco espacial, aerofotogrametria e inteligência territorial.",
+    "title": "Projetos",
+    "subtitle": "Capturas de sistemas e produtos que desenvolvi ou mantive em contratos públicos e privados.",
     "items": {
       "webgis_municipal": {
-        "title": "WebGIS Municipal",
-        "description": "Geoportal com ortomosaicos, cadastro e camadas multilayer — operação territorial, editor vetorial, mapas de calor e relatórios executivos."
+        "title": "WebGIS municipal",
+        "description": "Geoportal com ortomosaicos subdecimétricos, dados cadastrais e camadas multilayer. Editor vetorial em tela, buscas geolocalizadas, exportação de quadras e relatórios executivos."
       },
       "webgis_devgis": {
-        "title": "Geoportal Corporativo",
-        "description": "Hub geoespacial sob medida: camadas corporativas, edição em tempo real, filtros temáticos, mapas de calor e publicação para órgãos parceiros."
+        "title": "Geoportal corporativo",
+        "description": "Hub geoespacial com camadas corporativas, edição colaborativa, classificação temática e publicação de dados para prefeituras e órgãos parceiros."
       },
       "webgis_audit": {
-        "title": "Auditoria de Aerolevantamentos",
-        "description": "WebGIS para confrontar campanhas, overlay de ortomosaicos/MDT, indicadores de qualidade e trilha de pareceres técnicos."
+        "title": "Auditoria de aerolevantamentos",
+        "description": "Ambiente para confrontar campanhas por período e região, sobrepor ortomosaicos e MDT, medir conformidade das entregas e registrar pareceres técnicos."
       },
       "webgis_epi": {
-        "title": "Vigilância Epidemiológica",
-        "description": "Plataforma municipal com mapas de calor, armadilhas, alertas por limiar e apoio operacional ao combate a arboviroses."
+        "title": "Vigilância epidemiológica",
+        "description": "Plataforma municipal que integra armadilhas, ocorrências e clima por API, com mapas de calor, alertas por limiar e priorização de tratamento por bairro."
       },
       "spatial_db": {
-        "title": "Gestão de Banco Espacial",
-        "description": "Gestão de atividades e quadras, auditoria de consistência, sincronização entre bases e painéis de qualidade do dado espacial."
+        "title": "Gestão de banco espacial",
+        "description": "Controle de atividades e quadras com importação em lote, log de auditoria, conciliação entre bancos e relatório de inconsistências cartográficas."
       },
       "aero": {
-        "title": "Aerofotogrametria de Alta Precisão",
-        "description": "Drone + GNSS (RTK/PPK) e Metashape: ortomosaicos, MDT/MDS, nuvens classificadas, volumes e integração com CAD/BIM."
+        "title": "Aerofotogrametria",
+        "description": "Voos com drone e apoio GNSS processados em Metashape: ortomosaicos, MDT/MDS, nuvens classificadas, volumes auditáveis e integração com CAD e BIM."
       }
     }
   },
+  "Stack": {
+    "title": "Ferramentas",
+    "note": "Uso o que o contrato pede — abaixo, o que aparece com mais frequência."
+  },
   "Contact": {
-    "title": "Vamos transformar dados espaciais em solução?",
-    "description": "Dados espaciais não precisam ficar restritos a arquivos e mapas. Eles podem se transformar em sistemas, plataformas e soluções digitais. Fale comigo para um diagnóstico técnico gratuito de 30 minutos.",
+    "title": "Vamos conversar sobre o seu projeto",
+    "description": "Atendo prefeituras, consultorias ambientais, empresas de engenharia e grupos de pesquisa. Para discutir um levantamento, um banco de dados ou uma plataforma, me chame pelo WhatsApp ou e-mail.",
     "cta_main": "Falar no WhatsApp",
     "cta_phone": "(81) 99667-4681",
-    "cta_email": "Ou envie um e-mail para tfholanda@gmail.com"
+    "cta_email": "tfholanda@gmail.com"
   }
 }

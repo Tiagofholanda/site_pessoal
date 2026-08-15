@@ -1,113 +1,113 @@
 {
   "Nav": {
     "home": "Home",
-    "challenge": "Approach",
-    "engine": "Solutions",
-    "pillars": "Focus",
-    "portfolio": "Portfolio",
+    "services": "Services",
+    "method": "Method",
+    "portfolio": "Projects",
     "cv": "CV",
     "contact": "Contact",
-    "cta": "Chat on WhatsApp"
+    "cta": "WhatsApp"
   },
   "Common": {
     "footer": {
-      "rights": "All rights reserved. Designed and developed by Tiago Holanda."
+      "tagline": "Geoprocessing, WebGIS and spatial databases for land management, environment and engineering.",
+      "navigation": "Navigation",
+      "rights": "All rights reserved."
     }
   },
   "Hero": {
-    "badge": "Geotechnologies, Geoinformation and Spatial Solutions",
-    "title": "Geographic data becomes knowledge, technology and solutions.",
-    "description": "We integrate Geosciences, geotechnologies, software and applied research — from science to spatial product.",
-    "cta_primary": "Chat on WhatsApp"
+    "role": "Geoprocessing, WebGIS and spatial databases",
+    "description": "I build map platforms, organise spatial databases and automate geoprocessing routines for municipalities, environmental consultancies and engineering projects. Alongside that, I research coastal dynamics with drones, GNSS and remote sensing.",
+    "credentials": "Geographer (UFPE) · MSc in Geodetic Sciences and Geoinformation Technologies (UFPE) · PhD candidate in Geography (UFF)",
+    "cta_primary": "Discuss a project",
+    "cta_secondary": "See projects",
+    "portrait_alt": "Tiago Holanda"
   },
-  "ValueProp": {
-    "title": "A multidisciplinary approach",
-    "description": "More than producing maps or processing data, we understand territorial phenomena and turn spatial information into tools that support decisions, optimize processes and create new products and services.",
+  "Facts": {
+    "articles": "articles in scientific journals",
+    "citations": "citations on Google Scholar",
+    "reviewer": "journals I review for",
+    "cities": "municipalities served by the WebGIS I maintained in MG"
+  },
+  "Services": {
+    "title": "Services",
+    "intro": "I work across the three fronts that usually show up together in a territorial project: the database, the application that queries it and the survey that feeds it.",
     "items": {
-      "databases": {
-        "title": "Applied science",
-        "description": "We investigate methods, technologies and applications with concrete results in environment, territory, sustainability, spatial monitoring and resource management."
+      "webgis": {
+        "title": "WebGIS platforms and geoportals",
+        "description": "Map applications for querying, editing and publishing data. React and Mapbox GL on the interface, GeoServer and GeoNode for layer publishing, access control, thematic filters and reports for technical teams."
       },
-      "integration": {
-        "title": "Business perspective",
-        "description": "We identify problems, develop technological solutions and turn scientific knowledge into applications for companies, organizations, public institutions and innovation projects."
+      "data": {
+        "title": "Spatial databases",
+        "description": "Modelling and maintenance of PostgreSQL/PostGIS bases: bulk import, validation rules, consistency audits, cross-database sync and automation in Python and R."
       },
-      "analytics": {
-        "title": "Territorial intelligence",
-        "description": "We combine geoprocessing, GIS, remote sensing, cartography, geoinformation and custom geospatial application development."
+      "field": {
+        "title": "Survey and remote sensing",
+        "description": "Drone photogrammetry with GNSS support (RTK/PPK), processing in Metashape and Pix4D, orthomosaics, DTM/DSM, volume calculation and technical review of aerial survey campaigns."
       }
     }
   },
-  "Challenge": {
-    "title": "From research to product",
-    "subtitle": "Research can generate methods. Methods can generate technologies. And technologies can become solutions.",
-    "description": "That is the logic behind the project: bringing research, technology development and practical application closer together, creating geospatial solutions with scientific, environmental and economic value. Each project may start from a scientific question, a business need, an environmental problem or a territorial challenge.",
-    "card_commercial_title": "Fragmented data",
-    "card_commercial_desc": "Loose files, isolated maps and databases that do not talk to each other. Geographic information stays locked in one-off deliverables instead of becoming reusable infrastructure.",
-    "card_local_title": "Spatial infrastructure",
-    "card_local_desc": "The spatial database organizes. GIS analyzes. Web GIS publishes. The GeoPortal connects users and projects. Applications turn all of that into tools for teams."
-  },
-  "Engine": {
-    "badge": "GIS, GeoPortal and Spatial Intelligence Solutions",
-    "title": "Spatial technology applied to business",
-    "description": "We develop geospatial solutions for companies, consultancies and organizations that need to turn spatial data into information, analysis and decision-making. Platforms and applications to organize, integrate, analyze and publish geographic information in digital environments.",
-    "screenshot_alt": "GeoPortal and spatial intelligence dashboard"
-  },
-  "Pillars": {
-    "title": "Our focus",
-    "subtitle": "Understand space. Turn data into information. Turn information into technology. And turn technology into a solution.",
-    "routing_title": "GeoPortals and Web GIS",
-    "routing_desc": "Corporate and institutional GeoPortals, interactive geographic applications, dashboards and maps for querying, visualizing and sharing territorial information.",
-    "bi_title": "Databases and spatial analysis",
-    "bi_desc": "Spatial databases, geoprocessing, integration of geographic sources and systems for management, territorial and environmental monitoring.",
-    "topology_title": "Field and remote sensing",
-    "topology_desc": "Platforms for field data collection and visualization, satellite imagery, photogrammetry and custom applications for consultancies and tailored projects."
-  },
-  "CustomEngineering": {
-    "title": "Custom solutions for consultancies and projects",
-    "subtitle": "Every company has different processes, data and needs. We build modularly — from a project-specific app to a complete geospatial platform.",
-    "observation_title": "Environmental consultancies and coastal projects",
-    "observation_desc": "We integrate land use, shoreline, protected areas, ecosystems, infrastructure, field surveys and satellite imagery into GeoPortals and Web GIS for teams, managers and clients.",
-    "logistics_title": "Built into company operations",
-    "logistics_desc": "Collect → store → process → analyze → visualize → share → deliver. Reduce data fragmentation and create a reusable technology structure across contracts and studies.",
-    "infrastructure_title": "Integrated stack",
-    "infrastructure_desc": "Spatial Database + GIS + Web GIS + GeoPortal + APIs + Applications + Field Data + Remote Sensing — an integrated solution for the company's real problem."
+  "Method": {
+    "title": "How I run a project",
+    "intro": "Order matters. An application built on a disorganised base becomes rework within months.",
+    "steps": {
+      "diagnosis": {
+        "title": "Assessment",
+        "description": "I map which data already exists, how it is collected today and who uses each piece of information — an honest picture of what is ready and what is missing."
+      },
+      "structure": {
+        "title": "Data structure",
+        "description": "I define the PostGIS model, validation rules and import flow, including the change history required for auditing."
+      },
+      "application": {
+        "title": "Application",
+        "description": "I build the WebGIS, dashboard or automation routine on top of that base, scoped to what the team actually uses day to day."
+      },
+      "operation": {
+        "title": "Operation and handover",
+        "description": "I publish, document and train the team. The goal is for the client to keep operating without depending on me for routine tasks."
+      }
+    }
   },
   "Portfolio": {
-    "title": "Delivery portfolio",
-    "subtitle": "Real project screenshots across GeoPortal, Web GIS, spatial databases, photogrammetry and territorial intelligence.",
+    "title": "Projects",
+    "subtitle": "Screens from systems and products I built or maintained under public and private contracts.",
     "items": {
       "webgis_municipal": {
         "title": "Municipal WebGIS",
-        "description": "Geoportal with orthomosaics, cadastre and multilayer maps — vector editing, heatmaps and executive reporting."
+        "description": "Geoportal with sub-decimetre orthomosaics, cadastral data and multilayer maps. On-screen vector editing, geolocated search, block export and executive reports."
       },
       "webgis_devgis": {
-        "title": "Corporate Geoportal",
-        "description": "Custom geospatial hub: corporate layers, live editing, thematic filters, heatmaps and publishing for partner agencies."
+        "title": "Corporate geoportal",
+        "description": "Geospatial hub with corporate layers, collaborative editing, thematic classification and data publishing for municipalities and partner agencies."
       },
       "webgis_audit": {
-        "title": "Aerial Survey Audit",
-        "description": "WebGIS to compare campaigns, overlay orthomosaics/DTMs, quality indicators and technical review trails."
+        "title": "Aerial survey audit",
+        "description": "Environment to compare campaigns by period and region, overlay orthomosaics and DTMs, measure delivery compliance and record technical reviews."
       },
       "webgis_epi": {
-        "title": "Epidemiological Surveillance",
-        "description": "Municipal platform with heatmaps, traps, threshold alerts and operational support against arboviruses."
+        "title": "Epidemiological surveillance",
+        "description": "Municipal platform integrating traps, case records and weather through APIs, with heatmaps, threshold alerts and treatment prioritisation by district."
       },
       "spatial_db": {
-        "title": "Spatial Database Management",
-        "description": "Activity and city-block management, consistency audits, cross-database sync and spatial data-quality panels."
+        "title": "Spatial database management",
+        "description": "Activity and city-block control with bulk import, audit logs, cross-database reconciliation and cartographic inconsistency reporting."
       },
       "aero": {
-        "title": "High-Precision Photogrammetry",
-        "description": "Drone + GNSS (RTK/PPK) and Metashape: orthomosaics, DTM/DSM, classified clouds, volumes and CAD/BIM integration."
+        "title": "Photogrammetry",
+        "description": "Drone flights with GNSS ground control processed in Metashape: orthomosaics, DTM/DSM, classified point clouds, auditable volumes and CAD/BIM integration."
       }
     }
   },
+  "Stack": {
+    "title": "Tools",
+    "note": "I use whatever the contract calls for — below, what comes up most often."
+  },
   "Contact": {
-    "title": "Shall we turn spatial data into a solution?",
-    "description": "Spatial data does not have to stay locked in files and maps. It can become systems, platforms and digital solutions. Message me for a free 30-minute technical diagnosis.",
-    "cta_main": "Chat on WhatsApp",
-    "cta_phone": "(81) 99667-4681",
-    "cta_email": "Or email tfholanda@gmail.com"
+    "title": "Let's talk about your project",
+    "description": "I work with municipalities, environmental consultancies, engineering firms and research groups. To discuss a survey, a database or a platform, reach me on WhatsApp or by email.",
+    "cta_main": "Message on WhatsApp",
+    "cta_phone": "+55 81 99667-4681",
+    "cta_email": "tfholanda@gmail.com"
   }
 }
