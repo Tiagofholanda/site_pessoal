@@ -7,6 +7,7 @@ import {
   Lock,
   MapPinned,
   Satellite,
+  Waves,
 } from "lucide-react";
 import { getTranslations, setRequestLocale } from "next-intl/server";
 import { Link } from "@/i18n/routing";
@@ -31,6 +32,7 @@ const serviceKeys = [
 ] as const;
 
 const publicIcons = {
+  sinigc: Waves,
   fitec: BarChart3,
   coastal: MapPinned,
   research: Globe2,

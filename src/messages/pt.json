@@ -79,6 +79,10 @@
     "requestAccess": "Pedir acesso",
     "hasAccess": "Já tenho senha",
     "public": {
+      "sinigc": {
+        "title": "SINIGC",
+        "description": "Sistema Nacional Integrado de Inteligência e Gestão Costeira: infraestrutura compartilhada entre órgãos ambientais e academia, do campo à decisão. Página pública do projeto."
+      },
       "fitec": {
         "title": "Dashboard FITec",
         "description": "Painel Streamlit para acompanhar pontos de campo, progresso de meta, extensão da rede e mapa do levantamento. Código aberto no GitHub."

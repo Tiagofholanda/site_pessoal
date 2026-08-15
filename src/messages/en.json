@@ -79,6 +79,10 @@
     "requestAccess": "Request access",
     "hasAccess": "I already have a password",
     "public": {
+      "sinigc": {
+        "title": "SINIGC",
+        "description": "National Integrated System for Coastal Intelligence and Management: shared infrastructure for environmental agencies and academia, from field data to decision. Public project page."
+      },
       "fitec": {
         "title": "FITec dashboard",
         "description": "Streamlit dashboard to track field points, goal progress, network length and the survey map. Open source on GitHub."

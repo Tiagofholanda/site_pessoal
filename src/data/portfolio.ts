@@ -2,6 +2,11 @@ export const PRIVATE_BUCKET = "projetos-privados";
 
 export const publicProjects = [
   {
+    key: "sinigc",
+    image: "/portfolio/sinigc.jpg",
+    href: "https://tiagofholanda.github.io/sinigc-page/pt/#inicio",
+  },
+  {
     key: "fitec",
     image: "/portfolio/fitec.jpg",
     href: "https://github.com/Tiagofholanda/Dashboard_FITec",
