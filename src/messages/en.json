@@ -106,7 +106,8 @@
   "Contact": {
     "title": "Ready to govern your territory?",
     "description": "Request a free 30-minute technical diagnosis. I review your cadastre, WebGIS and GIS infrastructure and outline the path to a sovereign operation.",
-    "cta_main": "Book a Technical Diagnosis",
+    "cta_main": "Chat on WhatsApp",
+    "cta_phone": "(81) 99667-4681",
     "cta_email": "Or email tfholanda@gmail.com"
   }
 }

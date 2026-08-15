@@ -2,11 +2,13 @@
 
 import { Link } from "@/i18n/routing";
 import { useTranslations } from "next-intl";
-import { Github, Linkedin, Mail, MapPin } from "lucide-react";
-import { getAssetPath } from "@/lib/utils";
+import { Github, Linkedin, Mail, MapPin, MessageCircle } from "lucide-react";
+import { useLocale } from "next-intl";
+import { getAssetPath, getWhatsAppUrl } from "@/lib/utils";
 
 export default function Footer() {
   const t = useTranslations();
+  const locale = useLocale();
   const currentYear = new Date().getFullYear();
 
   const socialLinks = [
@@ -105,6 +107,17 @@ export default function Footer() {
             {t("Nav.contact")}
           </h4>
           <ul className="space-y-3 text-sm text-white/70">
+            <li className="flex items-center gap-2">
+              <MessageCircle size={16} />
+              <a
+                href={getWhatsAppUrl(locale)}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="hover:text-white"
+              >
+                (81) 99667-4681
+              </a>
+            </li>
             <li className="flex items-center gap-2">
               <Mail size={16} />
               <a href="mailto:tfholanda@gmail.com" className="hover:text-white">

@@ -12,6 +12,7 @@ import {
 } from "lucide-react";
 import { Link } from "@/i18n/routing";
 import { getTranslations, setRequestLocale } from "next-intl/server";
+import { getWhatsAppUrl } from "@/lib/utils";
 import DashboardMock from "@/components/DashboardMock";
 
 export const dynamic = "force-static";
@@ -50,13 +51,15 @@ export default async function Home({
               {t("Hero.description")}
             </p>
             <div className="flex flex-wrap gap-3">
-              <Link
-                href="/#contato"
+              <a
+                href={getWhatsAppUrl(locale)}
+                target="_blank"
+                rel="noopener noreferrer"
                 className="inline-flex items-center gap-2 rounded-md bg-teal px-6 py-3 text-sm font-semibold text-white transition hover:bg-teal-light"
               >
                 {t("Hero.cta_primary")}
                 <ArrowRightIcon size={16} />
-              </Link>
+              </a>
               <Link
                 href="/#desafio"
                 className="inline-flex items-center rounded-md border border-navy/20 bg-white px-6 py-3 text-sm font-semibold text-navy transition hover:border-navy"
@@ -168,13 +171,15 @@ export default async function Home({
                 </span>
               ))}
             </div>
-            <Link
-              href="/#contato"
+            <a
+              href={getWhatsAppUrl(locale)}
+              target="_blank"
+              rel="noopener noreferrer"
               className="inline-flex items-center gap-2 rounded-md bg-teal px-6 py-3 text-sm font-semibold text-white transition hover:bg-teal-light"
             >
               {t("Hero.cta_primary")}
               <ArrowRightIcon size={16} />
-            </Link>
+            </a>
           </div>
           <DashboardMock />
         </div>
@@ -286,12 +291,20 @@ export default async function Home({
           </p>
           <div className="flex flex-wrap items-center justify-center gap-3">
             <a
-              href="https://wa.me/5581996674681"
+              href={getWhatsAppUrl(locale)}
               target="_blank"
               rel="noopener noreferrer"
               className="inline-flex items-center gap-2 rounded-md bg-teal px-6 py-3 text-sm font-semibold text-white transition hover:bg-teal-light"
             >
               {t("Contact.cta_main")}
+            </a>
+            <a
+              href={getWhatsAppUrl(locale)}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center gap-2 rounded-md border border-white/30 px-6 py-3 text-sm font-semibold text-white transition hover:bg-white/10"
+            >
+              {t("Contact.cta_phone")}
             </a>
             <a
               href="mailto:tfholanda@gmail.com"

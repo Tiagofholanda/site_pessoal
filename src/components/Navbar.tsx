@@ -2,15 +2,17 @@
 
 import { useEffect, useState } from "react";
 import { Link } from "@/i18n/routing";
-import { useTranslations } from "next-intl";
+import { useLocale, useTranslations } from "next-intl";
 import { Menu, X } from "lucide-react";
-import { getAssetPath } from "@/lib/utils";
+import { getAssetPath, getWhatsAppUrl } from "@/lib/utils";
 import LanguageSwitcher from "./LanguageSwitcher";
 
 export default function Navbar() {
   const t = useTranslations("Nav");
+  const locale = useLocale();
   const [isOpen, setIsOpen] = useState(false);
   const [scrolled, setScrolled] = useState(false);
+  const whatsappUrl = getWhatsAppUrl(locale);
 
   useEffect(() => {
     const handleScroll = () => setScrolled(window.scrollY > 20);
@@ -67,12 +69,14 @@ export default function Navbar() {
 
         <div className="hidden items-center gap-3 lg:flex">
           <LanguageSwitcher />
-          <Link
-            href="/#contato"
+          <a
+            href={whatsappUrl}
+            target="_blank"
+            rel="noopener noreferrer"
             className="rounded-md bg-teal px-5 py-2.5 text-sm font-semibold text-white transition hover:bg-teal-light"
           >
             {t("cta")}
-          </Link>
+          </a>
         </div>
 
         <button
@@ -99,13 +103,15 @@ export default function Navbar() {
               </Link>
             ))}
             <LanguageSwitcher />
-            <Link
-              href="/#contato"
+            <a
+              href={whatsappUrl}
+              target="_blank"
+              rel="noopener noreferrer"
               onClick={() => setIsOpen(false)}
               className="rounded-2xl bg-navy px-5 py-4 text-center font-bold text-white shadow-lg"
             >
               {t("cta")}
-            </Link>
+            </a>
           </div>
         </div>
       )}

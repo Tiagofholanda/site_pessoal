@@ -106,7 +106,8 @@
   "Contact": {
     "title": "Pronto para governar o seu território?",
     "description": "Solicite um diagnóstico técnico gratuito de 30 minutos. Avalio o cadastro, o WebGIS e a infraestrutura GIS atuais e apresento o caminho para uma operação soberana.",
-    "cta_main": "Agendar Diagnóstico Técnico",
+    "cta_main": "Falar no WhatsApp",
+    "cta_phone": "(81) 99667-4681",
     "cta_email": "Ou envie um e-mail para tfholanda@gmail.com"
   }
 }
