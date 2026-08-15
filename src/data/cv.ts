@@ -19,7 +19,7 @@ export const cvCopy = {
       "Histórico profissional e acadêmico de Tiago Fernando de Holanda — GIS, WebGIS, cadastro territorial, geomorfologia costeira e aerofotogrametria.",
     summaryTitle: "Resumo",
     summary:
-      "Doutorando em Geografia pela UFF (LAGEF / H2O / LACCOST). Mestre em Ciências Geodésicas e Tecnologias da Geoinformação (UFPE) e geógrafo (UFPE). Atua como analista e desenvolvedor GIS: WebGIS (React, Mapbox, GeoServer, GeoNode), bancos PostGIS, automação com Python e R, dashboards e aerofotogrametria com drone e GNSS. Experiência em cadastro, PAEBM, reassentamento (Fundação Renova), vigilância territorial e pesquisa costeira. Revisor e membro de corpo editorial de periódicos de meio ambiente, sensoriamento remoto e geomorfologia.",
+      "Doutorando em Geografia pela UFF (LAGEF / H2O / LACCOST). Mestre em Ciências Geodésicas e Tecnologias da Geoinformação (UFPE) e geógrafo (UFPE). Desenvolvedor de GIS II e professor da especialização em Geoprocessamento na UFABC. Atua em WebGIS (React, Mapbox, GeoServer, GeoNode), bancos PostGIS, automação com Python e R, dashboards e aerofotogrametria com drone e GNSS. Experiência em cadastro, PAEBM, reassentamento (Fundação Renova), vigilância territorial e pesquisa costeira. Revisor e membro de corpo editorial de periódicos de meio ambiente, sensoriamento remoto e geomorfologia.",
     educationTitle: "Formação acadêmica e técnica",
     experienceTitle: "Experiência profissional",
     researchTitle: "Pesquisa, laboratórios e projetos",
@@ -36,7 +36,7 @@ export const cvCopy = {
       "Professional and academic record of Tiago Fernando de Holanda — GIS, WebGIS, land cadastre, coastal geomorphology and photogrammetry.",
     summaryTitle: "Summary",
     summary:
-      "PhD candidate in Geography at UFF (LAGEF / H2O / LACCOST). MSc in Geodetic Sciences and Geoinformation Technologies (UFPE) and geographer (UFPE). Works as a GIS analyst and developer: WebGIS (React, Mapbox, GeoServer, GeoNode), PostGIS, Python/R automation, dashboards, and drone/GNSS photogrammetry. Experience in cadastre, dam emergency plans, resettlement (Fundação Renova), territorial surveillance and coastal research. Reviewer and editorial-board member of journals in environment, remote sensing and geomorphology.",
+      "PhD candidate in Geography at UFF (LAGEF / H2O / LACCOST). MSc in Geodetic Sciences and Geoinformation Technologies (UFPE) and geographer (UFPE). GIS Developer II and professor in the Geoprocessing specialization at UFABC. Works with WebGIS (React, Mapbox, GeoServer, GeoNode), PostGIS, Python/R automation, dashboards, and drone/GNSS photogrammetry. Experience in cadastre, dam emergency plans, resettlement (Fundação Renova), territorial surveillance and coastal research. Reviewer and editorial-board member of journals in environment, remote sensing and geomorphology.",
     educationTitle: "Academic and technical education",
     experienceTitle: "Professional experience",
     researchTitle: "Research, labs and projects",
@@ -139,13 +139,13 @@ export const experience = [
   {
     period: "02/2024 —",
     pt: {
-      role: "Analista de Sistema II GIS",
+      role: "Desenvolvedor de GIS II",
       org: "ATOS",
       detail:
         "Desenvolvimento de aplicações WebGIS e sistemas, customização e geração de bancos de dados, regras de negócio espaciais e interfaces de análise com equipes de UX/UI.",
     },
     en: {
-      role: "GIS Systems Analyst II",
+      role: "GIS Developer II",
       org: "ATOS",
       detail:
         "WebGIS and systems development, spatial database design, business rules and analysis interfaces with UX/UI teams.",
@@ -167,7 +167,7 @@ export const experience = [
     },
   },
   {
-    period: "02/2025 — 10/2025",
+    period: "02/2025 — 07/2026",
     pt: {
       role: "Especialista de Geoprocessamento",
       org: "AERO Engenharia",
@@ -184,14 +184,16 @@ export const experience = [
   {
     period: "07/2023 —",
     pt: {
-      role: "Tutor da pós-graduação em Geoprocessamento",
+      role: "Professor da especialização em Geoprocessamento",
       org: "Universidade Federal do ABC (UFABC)",
-      detail: "Tutoria em disciplinas da especialização, orientação de TCC e acompanhamento pedagógico.",
+      detail:
+        "Docência na especialização em Geoprocessamento, disciplinas da pós-graduação, orientação de TCC e acompanhamento pedagógico.",
     },
     en: {
-      role: "Tutor, postgraduate Geoprocessing program",
+      role: "Professor, Geoprocessing specialization",
       org: "Federal University of ABC (UFABC)",
-      detail: "Course tutoring, thesis advising and pedagogical support.",
+      detail:
+        "Teaching in the Geoprocessing specialization, postgraduate courses, thesis advising and pedagogical support.",
     },
   },
   {
@@ -384,8 +386,8 @@ export const teaching = [
     en: "Lecturer at UPE: basic and thematic cartography, applied statistics, climatology, biogeography and geotechnologies (2020–2021).",
   },
   {
-    pt: "Tutor da especialização em Geoprocessamento na UFABC (orientação de TCC e disciplinas).",
-    en: "Tutor in the Geoprocessing specialization at UFABC (thesis advising and courses).",
+    pt: "Professor da especialização em Geoprocessamento na UFABC (disciplinas, orientação de TCC e acompanhamento pedagógico).",
+    en: "Professor in the Geoprocessing specialization at UFABC (courses, thesis advising and pedagogical support).",
   },
   {
     pt: "Cursos e palestras na UFPE: drone aplicado à climatologia; EPG/PET Geografia (2019); LACCOST, AMPLAGEO e LABOGEO (2020); aerofotogrametria com VANT (coordenador, 2017).",
